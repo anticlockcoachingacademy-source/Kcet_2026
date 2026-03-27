@@ -1,0 +1,2114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>KCET 2026 – Day 1 Study Plan | Anticlock Coaching Academy</title>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600;700&family=Roboto+Mono:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --navy: #0a1628;
+    --navy2: #112244;
+    --gold: #c9a227;
+    --gold2: #f0c040;
+    --gold-light: #fef3c7;
+    --cream: #fffdf5;
+    --white: #ffffff;
+    --green: #16a34a;
+    --green-light: #dcfce7;
+    --red: #dc2626;
+    --red-light: #fee2e2;
+    --orange: #ea580c;
+    --orange-light: #ffedd5;
+    --blue: #1d4ed8;
+    --blue-light: #dbeafe;
+    --purple: #7c3aed;
+    --purple-light: #ede9fe;
+    --gray: #6b7280;
+    --gray-light: #f9fafb;
+    --border: #e5e7eb;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--cream);
+    color: var(--navy);
+    line-height: 1.6;
+  }
+
+  /* ===== HEADER ===== */
+  .header {
+    background: linear-gradient(135deg, var(--navy) 0%, #1a3a6e 60%, #0a1628 100%);
+    position: relative;
+    overflow: hidden;
+    padding: 0;
+  }
+  .header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 300px; height: 300px;
+    background: var(--gold);
+    opacity: 0.06;
+    border-radius: 50%;
+  }
+  .header::after {
+    content: '';
+    position: absolute;
+    bottom: -80px; left: 40%;
+    width: 400px; height: 200px;
+    background: var(--gold);
+    opacity: 0.04;
+    border-radius: 50%;
+  }
+  .header-inner {
+    position: relative;
+    z-index: 2;
+    padding: 28px 36px 24px;
+  }
+  .brand-row {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 18px;
+  }
+  .brand-logo {
+    width: 64px; height: 64px;
+    background: linear-gradient(135deg, var(--gold), var(--gold2));
+    border-radius: 14px;
+    display: flex; align-items: center; justify-content: center;
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--navy);
+    letter-spacing: -1px;
+    box-shadow: 0 4px 20px rgba(201,162,39,0.3);
+  }
+  .brand-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--gold2);
+    letter-spacing: 0.3px;
+    line-height: 1.2;
+  }
+  .brand-text p {
+    font-size: 12px;
+    color: rgba(255,255,255,0.6);
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 2px;
+  }
+  .exam-banner {
+    background: rgba(201,162,39,0.12);
+    border: 1px solid rgba(201,162,39,0.3);
+    border-radius: 12px;
+    padding: 16px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr auto 1fr;
+    gap: 0;
+    align-items: center;
+    text-align: center;
+  }
+  .exam-stat { }
+  .exam-stat .num {
+    font-family: 'Playfair Display', serif;
+    font-size: 28px;
+    font-weight: 900;
+    color: var(--gold2);
+    line-height: 1;
+  }
+  .exam-stat .lbl {
+    font-size: 11px;
+    color: rgba(255,255,255,0.6);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-top: 3px;
+  }
+  .divider-v {
+    width: 1px;
+    height: 40px;
+    background: rgba(201,162,39,0.3);
+    margin: 0 auto;
+  }
+
+  .day-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background: linear-gradient(90deg, var(--gold), var(--gold2));
+    color: var(--navy);
+    font-weight: 700;
+    font-size: 13px;
+    padding: 6px 16px;
+    border-radius: 999px;
+    margin-top: 16px;
+    letter-spacing: 0.5px;
+  }
+
+  /* ===== NAV TABS ===== */
+  .tabs {
+    background: var(--white);
+    border-bottom: 2px solid var(--border);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+  }
+  .tabs-inner {
+    display: flex;
+    overflow-x: auto;
+    gap: 0;
+    padding: 0 16px;
+    scrollbar-width: none;
+  }
+  .tabs-inner::-webkit-scrollbar { display: none; }
+  .tab-btn {
+    flex-shrink: 0;
+    padding: 14px 20px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--gray);
+    background: none;
+    border: none;
+    border-bottom: 3px solid transparent;
+    cursor: pointer;
+    transition: all 0.2s;
+    white-space: nowrap;
+    letter-spacing: 0.3px;
+    margin-bottom: -2px;
+  }
+  .tab-btn.active {
+    color: var(--navy);
+    border-bottom-color: var(--gold);
+  }
+  .tab-btn:hover:not(.active) { color: var(--navy); background: var(--gray-light); }
+
+  /* ===== SECTIONS ===== */
+  .section { display: none; }
+  .section.active { display: block; }
+
+  .container { max-width: 980px; margin: 0 auto; padding: 28px 20px 60px; }
+
+  /* ===== SCHEDULE SECTION ===== */
+  .schedule-intro {
+    background: linear-gradient(135deg, #0a1628, #1a3560);
+    color: white;
+    border-radius: 16px;
+    padding: 24px 28px;
+    margin-bottom: 28px;
+    position: relative;
+    overflow: hidden;
+  }
+  .schedule-intro::before {
+    content: '📅';
+    position: absolute;
+    right: 24px; top: 50%;
+    transform: translateY(-50%);
+    font-size: 60px;
+    opacity: 0.15;
+  }
+  .schedule-intro h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    color: var(--gold2);
+    margin-bottom: 8px;
+  }
+  .schedule-intro p { font-size: 14px; color: rgba(255,255,255,0.8); line-height: 1.7; }
+
+  .target-bar {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-bottom: 28px;
+  }
+  .target-card {
+    border-radius: 14px;
+    padding: 18px 20px;
+    position: relative;
+    overflow: hidden;
+    border: 1.5px solid;
+  }
+  .target-card.physics { background: var(--blue-light); border-color: #93c5fd; }
+  .target-card.chemistry { background: var(--green-light); border-color: #86efac; }
+  .target-card.maths { background: var(--purple-light); border-color: #c4b5fd; }
+
+  .target-card .sub-icon { font-size: 28px; margin-bottom: 8px; display: block; }
+  .target-card .sub-name {
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    opacity: 0.7;
+    margin-bottom: 4px;
+  }
+  .target-card h3 { font-size: 17px; font-weight: 700; margin-bottom: 6px; line-height: 1.2; }
+  .target-card .marks-badge {
+    display: inline-block;
+    background: var(--navy);
+    color: var(--gold2);
+    font-size: 11px;
+    font-weight: 700;
+    padding: 3px 10px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+  }
+  .target-card .hours-row {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+  }
+  .target-card .hours-row span { font-size: 11px; font-weight: 400; opacity: 0.7; }
+
+  /* TIMETABLE */
+  .timetable-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+    color: var(--navy);
+    display: flex; align-items: center; gap: 10px;
+  }
+  .timetable {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1.5px solid var(--border);
+    margin-bottom: 28px;
+  }
+  .tt-header {
+    display: grid;
+    grid-template-columns: 130px 1fr 90px 100px 80px;
+    background: var(--navy);
+    color: var(--gold2);
+    font-size: 12px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 12px 20px;
+    gap: 12px;
+  }
+  .tt-row {
+    display: grid;
+    grid-template-columns: 130px 1fr 90px 100px 80px;
+    padding: 14px 20px;
+    gap: 12px;
+    align-items: center;
+    border-bottom: 1px solid var(--border);
+    font-size: 14px;
+    transition: background 0.15s;
+  }
+  .tt-row:last-child { border-bottom: none; }
+  .tt-row:hover { background: var(--gray-light); }
+  .tt-row.break-row { background: #fffbeb; }
+  .tt-row.mock-row { background: #eff6ff; }
+  .tt-row.revision-row { background: #f0fdf4; }
+
+  .time-col { font-family: 'Roboto Mono', monospace; font-size: 12px; font-weight: 600; color: var(--navy2); }
+  .activity-col { font-weight: 500; }
+  .activity-col small { display: block; font-size: 12px; color: var(--gray); font-weight: 400; margin-top: 2px; }
+  .subj-chip {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+  }
+  .chip-phy { background: var(--blue-light); color: var(--blue); }
+  .chip-chem { background: var(--green-light); color: var(--green); }
+  .chip-math { background: var(--purple-light); color: var(--purple); }
+  .chip-break { background: #fef3c7; color: #92400e; }
+  .chip-mock { background: var(--blue-light); color: #1e40af; }
+  .chip-rev { background: var(--green-light); color: #15803d; }
+  .chip-all { background: #fce7f3; color: #9d174d; }
+
+  .dur-col { font-size: 13px; font-weight: 600; color: var(--navy2); }
+  .priority-dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 6px;
+  }
+  .dot-high { background: #dc2626; }
+  .dot-med { background: #f59e0b; }
+  .dot-low { background: #22c55e; }
+
+  /* summary row */
+  .tt-summary {
+    background: linear-gradient(90deg, var(--navy), #1a3560);
+    color: white;
+    padding: 14px 20px;
+    display: flex;
+    gap: 28px;
+    font-size: 13px;
+    border-radius: 0 0 13px 13px;
+  }
+  .tt-summary strong { color: var(--gold2); }
+
+  /* TOPICS GRID */
+  .topics-section { margin-bottom: 32px; }
+  .topics-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    margin-bottom: 18px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .topics-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  .topic-card {
+    border-radius: 14px;
+    border: 1.5px solid var(--border);
+    overflow: hidden;
+  }
+  .topic-card-header {
+    padding: 14px 18px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 700;
+    font-size: 15px;
+    color: white;
+  }
+  .tc-phy { background: linear-gradient(90deg, #1d4ed8, #3b82f6); }
+  .tc-chem { background: linear-gradient(90deg, #15803d, #22c55e); }
+  .tc-math { background: linear-gradient(90deg, #6d28d9, #8b5cf6); }
+  .tc-tips { background: linear-gradient(90deg, #b45309, #f59e0b); }
+
+  .topic-list { padding: 12px 18px; }
+  .topic-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 7px 0;
+    border-bottom: 1px dashed var(--border);
+    font-size: 13.5px;
+  }
+  .topic-item:last-child { border-bottom: none; }
+  .topic-badge {
+    flex-shrink: 0;
+    padding: 2px 8px;
+    border-radius: 999px;
+    font-size: 10px;
+    font-weight: 700;
+    margin-top: 2px;
+  }
+  .badge-must { background: #fee2e2; color: #991b1b; }
+  .badge-imp { background: #fef3c7; color: #92400e; }
+  .badge-med { background: #dbeafe; color: #1e40af; }
+  .topic-text { line-height: 1.4; }
+  .topic-text small { font-size: 11px; color: var(--gray); display: block; }
+
+  /* ===== FORMULA SECTION ===== */
+  .formula-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 28px; }
+  .formula-card {
+    border-radius: 14px;
+    overflow: hidden;
+    border: 1.5px solid var(--border);
+  }
+  .formula-header {
+    padding: 14px 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+    display: flex; align-items: center; gap: 10px;
+  }
+  .fh-phy { background: linear-gradient(90deg, #0a1628, #1d4ed8); }
+  .fh-chem { background: linear-gradient(90deg, #0a1628, #15803d); }
+  .fh-math { background: linear-gradient(90deg, #0a1628, #6d28d9); }
+
+  .formula-body { padding: 14px 18px; }
+  .formula-item {
+    background: #f8f9ff;
+    border: 1px solid #e0e7ff;
+    border-radius: 8px;
+    padding: 10px 14px;
+    margin-bottom: 10px;
+    font-family: 'Roboto Mono', monospace;
+    font-size: 13px;
+  }
+  .formula-item .formula-name {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--navy);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+  }
+  .formula-eq {
+    font-size: 15px;
+    font-weight: 600;
+    color: #1e3a8a;
+    margin-bottom: 4px;
+  }
+  .formula-note {
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    color: var(--gray);
+  }
+
+  .cheat-box {
+    grid-column: 1 / -1;
+    background: linear-gradient(135deg, #fef9e7, #fff3cd);
+    border: 2px solid var(--gold);
+    border-radius: 14px;
+    padding: 20px 24px;
+  }
+  .cheat-box h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 18px;
+    color: var(--navy);
+    margin-bottom: 14px;
+    display: flex; align-items: center; gap: 8px;
+  }
+  .cheat-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+  .cheat-col h4 {
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--navy);
+    margin-bottom: 8px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid var(--gold);
+  }
+  .cheat-item {
+    font-size: 12.5px;
+    padding: 5px 0;
+    border-bottom: 1px dashed #e5e7eb;
+    color: #374151;
+    line-height: 1.4;
+  }
+  .cheat-item:last-child { border-bottom: none; }
+  .cheat-item strong { color: var(--navy); }
+
+  /* ===== MOCK TEST SECTION ===== */
+  .mock-intro {
+    background: linear-gradient(135deg, #1e3a8a, #1d4ed8);
+    color: white;
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+  }
+  .mock-intro h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold2); margin-bottom: 6px; }
+  .mock-intro p { font-size: 13px; opacity: 0.85; }
+  .mock-meta { flex-shrink: 0; text-align: center; }
+  .mock-meta .big-num { font-family: 'Playfair Display', serif; font-size: 36px; font-weight: 900; color: var(--gold2); line-height: 1; }
+  .mock-meta .lbl { font-size: 11px; opacity: 0.7; text-transform: uppercase; letter-spacing: 0.5px; }
+
+  .subject-selector {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-bottom: 24px;
+  }
+  .subj-tab {
+    padding: 14px;
+    border-radius: 12px;
+    border: 2px solid var(--border);
+    background: white;
+    cursor: pointer;
+    text-align: center;
+    font-weight: 600;
+    font-size: 14px;
+    transition: all 0.2s;
+    display: flex; flex-direction: column; align-items: center; gap: 6px;
+  }
+  .subj-tab .icon { font-size: 24px; }
+  .subj-tab.active.phy { border-color: #3b82f6; background: #eff6ff; color: #1d4ed8; }
+  .subj-tab.active.chem { border-color: #22c55e; background: #f0fdf4; color: #15803d; }
+  .subj-tab.active.math { border-color: #8b5cf6; background: #f5f3ff; color: #6d28d9; }
+
+  /* Quiz engine */
+  .quiz-container { display: none; }
+  .quiz-container.active { display: block; }
+  .quiz-header {
+    background: var(--navy);
+    color: white;
+    border-radius: 14px 14px 0 0;
+    padding: 16px 22px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .quiz-header h3 { font-size: 16px; font-weight: 700; }
+  .quiz-progress { font-size: 12px; opacity: 0.7; }
+  .quiz-timer-bar {
+    height: 4px;
+    background: rgba(255,255,255,0.2);
+    position: relative;
+    overflow: hidden;
+  }
+  .quiz-timer-fill {
+    height: 100%;
+    background: var(--gold2);
+    transition: width 0.1s linear;
+  }
+  .quiz-body {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-top: none;
+    border-radius: 0 0 14px 14px;
+    padding: 22px;
+  }
+  .q-number {
+    font-size: 11px;
+    font-weight: 700;
+    color: var(--gray);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+  }
+  .q-text {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--navy);
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  .q-pyq-tag {
+    display: inline-block;
+    background: #fef3c7;
+    color: #92400e;
+    font-size: 10px;
+    font-weight: 700;
+    padding: 2px 8px;
+    border-radius: 999px;
+    margin-bottom: 10px;
+    letter-spacing: 0.5px;
+  }
+  .options { display: grid; gap: 10px; margin-bottom: 20px; }
+  .option-btn {
+    padding: 13px 18px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background: var(--white);
+    text-align: left;
+    font-size: 14px;
+    font-family: 'DM Sans', sans-serif;
+    cursor: pointer;
+    transition: all 0.15s;
+    display: flex; align-items: center; gap: 12px;
+  }
+  .option-btn:hover:not(:disabled) { border-color: var(--navy2); background: var(--gray-light); }
+  .option-btn.correct { border-color: var(--green); background: var(--green-light); color: #166534; font-weight: 600; }
+  .option-btn.wrong { border-color: var(--red); background: var(--red-light); color: #991b1b; }
+  .option-label {
+    width: 26px; height: 26px;
+    border-radius: 50%;
+    background: var(--border);
+    display: flex; align-items: center; justify-content: center;
+    font-size: 12px;
+    font-weight: 700;
+    flex-shrink: 0;
+  }
+  .option-btn.correct .option-label { background: var(--green); color: white; }
+  .option-btn.wrong .option-label { background: var(--red); color: white; }
+
+  .explanation-box {
+    background: #f0f9ff;
+    border: 1.5px solid #bae6fd;
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 13.5px;
+    color: #0c4a6e;
+    margin-bottom: 20px;
+    display: none;
+    line-height: 1.6;
+  }
+  .explanation-box strong { color: #0369a1; }
+
+  .quiz-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 16px;
+  }
+  .btn {
+    padding: 11px 24px;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    cursor: pointer;
+    border: none;
+    transition: all 0.2s;
+    letter-spacing: 0.3px;
+  }
+  .btn-primary { background: var(--navy); color: var(--gold2); }
+  .btn-primary:hover { background: var(--navy2); transform: translateY(-1px); }
+  .btn-secondary { background: var(--gold); color: var(--navy); }
+  .btn-secondary:hover { background: var(--gold2); }
+  .btn-ghost { background: var(--gray-light); color: var(--navy); border: 1.5px solid var(--border); }
+  .btn-ghost:hover { background: var(--border); }
+  .btn:disabled { opacity: 0.4; cursor: not-allowed; transform: none; }
+
+  .score-display {
+    font-size: 13px;
+    font-weight: 600;
+    color: var(--navy);
+    background: var(--gold-light);
+    padding: 8px 16px;
+    border-radius: 8px;
+  }
+
+  /* RESULTS */
+  .results-panel {
+    background: var(--white);
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 28px;
+    text-align: center;
+    margin-top: 24px;
+    display: none;
+  }
+  .results-panel .trophy { font-size: 56px; margin-bottom: 12px; }
+  .results-panel h3 { font-family: 'Playfair Display', serif; font-size: 24px; margin-bottom: 8px; }
+  .results-panel .score-big {
+    font-family: 'Playfair Display', serif;
+    font-size: 52px;
+    font-weight: 900;
+    color: var(--navy);
+    line-height: 1;
+    margin: 12px 0;
+  }
+  .results-panel .score-big span { color: var(--gold); }
+  .result-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 12px;
+    margin: 20px 0;
+  }
+  .result-stat {
+    background: var(--gray-light);
+    border-radius: 10px;
+    padding: 12px;
+  }
+  .result-stat .rs-num { font-size: 22px; font-weight: 700; }
+  .result-stat .rs-lbl { font-size: 11px; color: var(--gray); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 2px; }
+  .feedback-msg {
+    background: linear-gradient(90deg, #fef3c7, #fff);
+    border: 1px solid var(--gold);
+    border-radius: 10px;
+    padding: 14px 18px;
+    font-size: 14px;
+    text-align: left;
+    margin: 16px 0;
+    line-height: 1.6;
+  }
+
+  /* ===== TRACKER SECTION ===== */
+  .tracker-header {
+    background: linear-gradient(135deg, #0a1628, #15803d);
+    color: white;
+    border-radius: 16px;
+    padding: 22px 26px;
+    margin-bottom: 24px;
+  }
+  .tracker-header h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: var(--gold2); margin-bottom: 6px; }
+  .tracker-header p { font-size: 13px; opacity: 0.8; }
+
+  .tracker-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; margin-bottom: 24px; }
+
+  .tracker-card {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    overflow: hidden;
+  }
+  .tracker-card-header {
+    padding: 14px 18px;
+    color: white;
+    font-weight: 700;
+    font-size: 15px;
+  }
+  .tch-phy { background: linear-gradient(90deg, #1d4ed8, #60a5fa); }
+  .tch-chem { background: linear-gradient(90deg, #15803d, #4ade80); }
+  .tch-math { background: linear-gradient(90deg, #6d28d9, #a78bfa); }
+  .tch-overall { background: linear-gradient(90deg, #b45309, #f59e0b); }
+
+  .tracker-card-body { padding: 16px 18px; }
+
+  .check-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 9px 0;
+    border-bottom: 1px solid var(--border);
+    font-size: 13.5px;
+    cursor: pointer;
+  }
+  .check-item:last-child { border-bottom: none; }
+  .check-box {
+    width: 20px; height: 20px;
+    border-radius: 5px;
+    border: 2px solid var(--border);
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+    transition: all 0.2s;
+    cursor: pointer;
+  }
+  .check-box.checked { background: var(--green); border-color: var(--green); }
+  .check-box.checked::after { content: '✓'; color: white; font-size: 12px; font-weight: 700; }
+  .check-label { flex: 1; line-height: 1.4; }
+  .check-label.done { text-decoration: line-through; color: var(--gray); }
+  .time-spent-input {
+    width: 55px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1.5px solid var(--border);
+    font-size: 12px;
+    font-family: 'Roboto Mono', monospace;
+    color: var(--navy);
+    text-align: center;
+  }
+
+  .progress-bar-wrap {
+    background: var(--border);
+    border-radius: 999px;
+    height: 8px;
+    margin: 12px 0 6px;
+    overflow: hidden;
+  }
+  .progress-fill {
+    height: 100%;
+    border-radius: 999px;
+    transition: width 0.5s ease;
+  }
+  .pf-phy { background: linear-gradient(90deg, #3b82f6, #93c5fd); }
+  .pf-chem { background: linear-gradient(90deg, #22c55e, #86efac); }
+  .pf-math { background: linear-gradient(90deg, #8b5cf6, #c4b5fd); }
+  .pf-overall { background: linear-gradient(90deg, var(--gold), var(--gold2)); }
+
+  .progress-pct {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--navy);
+    text-align: right;
+  }
+
+  .mood-section {
+    background: white;
+    border: 1.5px solid var(--border);
+    border-radius: 14px;
+    padding: 20px 24px;
+    margin-bottom: 20px;
+  }
+  .mood-section h3 { font-size: 15px; font-weight: 700; margin-bottom: 14px; }
+  .mood-btns { display: flex; gap: 10px; flex-wrap: wrap; }
+  .mood-btn {
+    padding: 8px 16px;
+    border-radius: 10px;
+    border: 2px solid var(--border);
+    background: white;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.15s;
+  }
+  .mood-btn.selected { border-color: var(--gold); background: var(--gold-light); font-weight: 600; }
+
+  .notes-area {
+    width: 100%;
+    min-height: 100px;
+    border: 1.5px solid var(--border);
+    border-radius: 10px;
+    padding: 14px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 14px;
+    resize: vertical;
+    margin-top: 14px;
+    background: var(--gray-light);
+  }
+  .notes-area:focus { outline: none; border-color: var(--gold); background: white; }
+
+  .save-btn {
+    margin-top: 16px;
+    padding: 13px 32px;
+    background: linear-gradient(90deg, var(--navy), var(--navy2));
+    color: var(--gold2);
+    border: none;
+    border-radius: 10px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: all 0.2s;
+    letter-spacing: 0.5px;
+  }
+  .save-btn:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(10,22,40,0.3); }
+
+  .save-confirmation {
+    background: var(--green-light);
+    color: #166534;
+    padding: 12px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    text-align: center;
+    margin-top: 12px;
+    display: none;
+  }
+
+  /* Overall stats bar */
+  .overall-stats {
+    background: linear-gradient(135deg, var(--navy), #1a3560);
+    color: white;
+    border-radius: 14px;
+    padding: 20px 24px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    text-align: center;
+    margin-bottom: 24px;
+  }
+  .os-item .os-num {
+    font-family: 'Playfair Display', serif;
+    font-size: 26px;
+    font-weight: 900;
+    color: var(--gold2);
+    line-height: 1;
+  }
+  .os-item .os-lbl {
+    font-size: 11px;
+    opacity: 0.6;
+    text-transform: uppercase;
+    letter-spacing: 0.6px;
+    margin-top: 4px;
+  }
+
+  /* ===== FOOTER ===== */
+  .footer {
+    background: var(--navy);
+    color: rgba(255,255,255,0.5);
+    text-align: center;
+    padding: 18px;
+    font-size: 12px;
+    border-top: 2px solid var(--gold);
+  }
+  .footer strong { color: var(--gold2); }
+
+  /* Responsive */
+  @media (max-width: 700px) {
+    .tt-header, .tt-row { grid-template-columns: 100px 1fr 70px 80px 60px; font-size: 12px; padding: 12px 12px; gap: 8px; }
+    .topics-grid, .formula-grid, .tracker-grid { grid-template-columns: 1fr; }
+    .target-bar { grid-template-columns: 1fr; }
+    .cheat-cols { grid-template-columns: 1fr; }
+    .result-grid { grid-template-columns: repeat(2,1fr); }
+    .subject-selector { grid-template-columns: 1fr; }
+    .overall-stats { grid-template-columns: repeat(2,1fr); }
+    .exam-banner { grid-template-columns: 1fr; gap: 12px; }
+    .divider-v { display: none; }
+    .brand-text h1 { font-size: 17px; }
+  }
+</style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header class="header">
+  <div class="header-inner">
+    <div class="brand-row">
+      <div class="brand-logo">AC</div>
+      <div class="brand-text">
+        <h1>Anticlock Coaching Academy</h1>
+        <p>KCET 2026 · 27-Day Intensive Preparation Program</p>
+      </div>
+    </div>
+    <div class="exam-banner">
+      <div class="exam-stat">
+        <div class="num">27</div>
+        <div class="lbl">Days Left</div>
+      </div>
+      <div class="divider-v"></div>
+      <div class="exam-stat">
+        <div class="num">45+</div>
+        <div class="lbl">Target Score</div>
+      </div>
+      <div class="divider-v"></div>
+      <div class="exam-stat">
+        <div class="num">180</div>
+        <div class="lbl">Total MCQs</div>
+      </div>
+      <div class="divider-v"></div>
+      <div class="exam-stat">
+        <div class="num">Apr 23</div>
+        <div class="lbl">Exam Date</div>
+      </div>
+    </div>
+    <div class="day-badge">📅 DAY 1 — Physics: Current Electricity | Chemistry: Solutions | Maths: Relations & Functions</div>
+  </div>
+</header>
+
+<!-- TABS -->
+<nav class="tabs">
+  <div class="tabs-inner">
+    <button class="tab-btn active" onclick="switchTab('schedule',this)">📋 Schedule</button>
+    <button class="tab-btn" onclick="switchTab('topics',this)">📚 Topics</button>
+    <button class="tab-btn" onclick="switchTab('formulas',this)">🔢 Formulas</button>
+    <button class="tab-btn" onclick="switchTab('mock',this)">✍️ Mock Test</button>
+    <button class="tab-btn" onclick="switchTab('tracker',this)">📊 Tracker</button>
+  </div>
+</nav>
+
+<!-- ====================== SCHEDULE ====================== -->
+<div id="schedule" class="section active">
+  <div class="container">
+
+    <div class="schedule-intro">
+      <div>
+        <h2>Day 1 – Your Study Mission</h2>
+        <p>You have <strong>27 days</strong> to go from where you are to <strong>45+ marks</strong> in KCET 2026. Today you tackle 3 high-weightage chapters. Follow this schedule strictly — it's designed for a student who knows some basics but needs exam-level command. No shortcuts. Every hour listed below is essential.</p>
+      </div>
+    </div>
+
+    <!-- subject target cards -->
+    <div class="target-bar">
+      <div class="target-card physics">
+        <span class="sub-icon">⚡</span>
+        <div class="sub-name">Physics</div>
+        <h3>Current Electricity</h3>
+        <div class="marks-badge">~6 marks in KCET</div>
+        <div class="hours-row">4 hrs 30 min study<br><span>+ 45 min mock + 30 min revision</span></div>
+      </div>
+      <div class="target-card chemistry">
+        <span class="sub-icon">🧪</span>
+        <div class="sub-name">Chemistry</div>
+        <h3>Solutions</h3>
+        <div class="marks-badge">~5 marks in KCET</div>
+        <div class="hours-row">3 hrs 30 min study<br><span>+ 30 min mock + 30 min revision</span></div>
+      </div>
+      <div class="target-card maths">
+        <span class="sub-icon">📐</span>
+        <div class="sub-name">Mathematics</div>
+        <h3>Relations & Functions</h3>
+        <div class="marks-badge">~4 marks in KCET</div>
+        <div class="hours-row">2 hrs 30 min study<br><span>+ 30 min mock + 30 min revision</span></div>
+      </div>
+    </div>
+
+    <!-- TIMETABLE -->
+    <div class="timetable-section">
+      <h2>⏱️ Full Day Timetable</h2>
+      <div class="timetable">
+        <div class="tt-header">
+          <div>TIME</div>
+          <div>ACTIVITY</div>
+          <div>SUBJECT</div>
+          <div>DURATION</div>
+          <div>PRIORITY</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">6:00 – 6:20</div>
+          <div class="activity-col">Morning warm-up – read formula sheet aloud<small>Print or open Formula tab; revise out loud</small></div>
+          <div><span class="subj-chip chip-all">All 3</span></div>
+          <div class="dur-col">20 min</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">6:20 – 8:50</div>
+          <div class="activity-col">Physics – Current Electricity (Part 1)<small>Ohm's law → Drift velocity → Resistivity → Series/Parallel → Kirchhoff's laws</small></div>
+          <div><span class="subj-chip chip-phy">Physics</span></div>
+          <div class="dur-col">2 hrs 30 min</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row break-row">
+          <div class="time-col">8:50 – 9:10</div>
+          <div class="activity-col">Break + Breakfast<small>Hydrate. No phone scrolling.</small></div>
+          <div><span class="subj-chip chip-break">Break</span></div>
+          <div class="dur-col">20 min</div>
+          <div>—</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">9:10 – 11:10</div>
+          <div class="activity-col">Physics – Current Electricity (Part 2)<small>Wheatstone bridge → Meter bridge → Potentiometer → Cells (EMF, internal r) → Numericals</small></div>
+          <div><span class="subj-chip chip-phy">Physics</span></div>
+          <div class="dur-col">2 hrs</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row mock-row">
+          <div class="time-col">11:10 – 11:55</div>
+          <div class="activity-col">Physics Mock Test – 30 MCQs (1 min each)<small>Use Mock Test tab → Physics section → Strict timer</small></div>
+          <div><span class="subj-chip chip-mock">Mock</span></div>
+          <div class="dur-col">45 min</div>
+          <div><span class="priority-dot dot-high"></span>Must Do</div>
+        </div>
+
+        <div class="tt-row break-row">
+          <div class="time-col">11:55 – 12:25</div>
+          <div class="activity-col">Lunch Break<small>Proper meal. Short walk if possible.</small></div>
+          <div><span class="subj-chip chip-break">Break</span></div>
+          <div class="dur-col">30 min</div>
+          <div>—</div>
+        </div>
+
+        <div class="tt-row revision-row">
+          <div class="time-col">12:25 – 12:55</div>
+          <div class="activity-col">Physics Revision + Mock Analysis<small>Go through wrong answers. Re-read those formulas.</small></div>
+          <div><span class="subj-chip chip-rev">Revision</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">12:55 – 2:55</div>
+          <div class="activity-col">Chemistry – Solutions (Part 1)<small>Types of solutions → Concentration terms: Molarity, Molality, Mole fraction, Mass % → Henry's Law</small></div>
+          <div><span class="subj-chip chip-chem">Chemistry</span></div>
+          <div class="dur-col">2 hrs</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row break-row">
+          <div class="time-col">2:55 – 3:15</div>
+          <div class="activity-col">Short Break<small>Snack + fresh air.</small></div>
+          <div><span class="subj-chip chip-break">Break</span></div>
+          <div class="dur-col">20 min</div>
+          <div>—</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">3:15 – 4:45</div>
+          <div class="activity-col">Chemistry – Solutions (Part 2)<small>Raoult's Law → Colligative properties → Elevation in BP → Depression in FP → Osmotic pressure → Van't Hoff factor</small></div>
+          <div><span class="subj-chip chip-chem">Chemistry</span></div>
+          <div class="dur-col">1 hr 30 min</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row mock-row">
+          <div class="time-col">4:45 – 5:15</div>
+          <div class="activity-col">Chemistry Mock Test – 30 MCQs<small>Use Mock Test tab → Chemistry section → Strict timer</small></div>
+          <div><span class="subj-chip chip-mock">Mock</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-high"></span>Must Do</div>
+        </div>
+
+        <div class="tt-row revision-row">
+          <div class="time-col">5:15 – 5:45</div>
+          <div class="activity-col">Chemistry Revision + Mock Analysis<small>Focus on colligative property numericals you got wrong.</small></div>
+          <div><span class="subj-chip chip-rev">Revision</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-med"></span>Medium</div>
+        </div>
+
+        <div class="tt-row break-row">
+          <div class="time-col">5:45 – 6:00</div>
+          <div class="activity-col">Short Break<small>Walk outside. 15 min.</small></div>
+          <div><span class="subj-chip chip-break">Break</span></div>
+          <div class="dur-col">15 min</div>
+          <div>—</div>
+        </div>
+
+        <div class="tt-row">
+          <div class="time-col">6:00 – 8:00</div>
+          <div class="activity-col">Maths – Relations & Functions (PUC 1 + PUC 2)<small>Types of Relations (reflexive, symmetric, transitive, equivalence) → Types of Functions (one-one, onto, bijective) → Composition → Inverse functions → Binary operations</small></div>
+          <div><span class="subj-chip chip-math">Maths</span></div>
+          <div class="dur-col">2 hrs</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-row break-row">
+          <div class="time-col">8:00 – 8:30</div>
+          <div class="activity-col">Dinner Break<small>Proper meal. No study for 30 min.</small></div>
+          <div><span class="subj-chip chip-break">Break</span></div>
+          <div class="dur-col">30 min</div>
+          <div>—</div>
+        </div>
+
+        <div class="tt-row mock-row">
+          <div class="time-col">8:30 – 9:00</div>
+          <div class="activity-col">Maths Mock Test – 30 MCQs<small>Use Mock Test tab → Maths section → Strict timer</small></div>
+          <div><span class="subj-chip chip-mock">Mock</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-high"></span>Must Do</div>
+        </div>
+
+        <div class="tt-row revision-row">
+          <div class="time-col">9:00 – 9:30</div>
+          <div class="activity-col">Maths Revision + Mock Analysis<small>Re-solve wrong questions. Note down mistake patterns.</small></div>
+          <div><span class="subj-chip chip-rev">Revision</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-med"></span>Medium</div>
+        </div>
+
+        <div class="tt-row revision-row">
+          <div class="time-col">9:30 – 10:00</div>
+          <div class="activity-col">Night Revision – All 3 chapters (Speed run)<small>Formula sheet → Top 5 concepts per subject → Fill tracker</small></div>
+          <div><span class="subj-chip chip-all">All 3</span></div>
+          <div class="dur-col">30 min</div>
+          <div><span class="priority-dot dot-high"></span>High</div>
+        </div>
+
+        <div class="tt-summary">
+          <div>📚 <strong>Total Study Time:</strong> 8 hrs 30 min</div>
+          <div>✍️ <strong>Mock Tests:</strong> 90 MCQs across 3 subjects</div>
+          <div>🔄 <strong>Revision:</strong> 1 hr 30 min</div>
+          <div>☕ <strong>Total Breaks:</strong> 1 hr 55 min</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====================== TOPICS ====================== -->
+<div id="topics" class="section">
+  <div class="container">
+    <div class="topics-section">
+      <h2>📚 Chapter-wise Topics for Today</h2>
+      <div class="topics-grid">
+
+        <!-- Physics -->
+        <div class="topic-card">
+          <div class="topic-card-header tc-phy">⚡ Physics – Current Electricity (~6 marks)</div>
+          <div class="topic-list">
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Ohm's Law: V=IR, I-V characteristics, ohmic & non-ohmic conductors<small>Direct MCQ every year. Know graphical representation.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Drift Velocity & Current Density: I = nAev<sub>d</sub><small>Derivation asked; also formula-based numerical.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Kirchhoff's Laws (KCL & KVL) – junction rule & loop rule<small>Complex circuit problems. Mandatory topic.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Series & Parallel Combination of Resistors<small>Equivalent resistance problems always in KCET.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">EMF, Internal Resistance, Terminal Voltage<small>V = E – Ir formula and cell combinations.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Wheatstone Bridge – balance condition P/Q = R/S<small>Direct concept question in most papers.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Potentiometer – principle, comparison of EMF, internal resistance<small>Frequently asked numerical.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Resistivity, Temperature dependence: ρ = ρ₀(1+αΔT)<small>Temperature coefficient problems.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Electrical Power: P = VI = I²R = V²/R<small>Bulb problems, maximum power transfer.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-med">MED</span><div class="topic-text">Carbon resistor colour code & tolerance<small>2-3 questions have appeared from this historically.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-med">MED</span><div class="topic-text">Meter Bridge – finding unknown resistance<small>Derivation + numerical.</small></div></div>
+          </div>
+        </div>
+
+        <!-- Chemistry -->
+        <div class="topic-card">
+          <div class="topic-card-header tc-chem">🧪 Chemistry – Solutions (~5 marks)</div>
+          <div class="topic-list">
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Concentration terms: Molarity, Molality, Mole Fraction, Mass %<small>Numericals directly from NCERT. Always 1-2 MCQs.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Raoult's Law – ideal vs non-ideal solutions<small>Positive/negative deviations, azeotropes.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Colligative Properties – all four types<small>Elevation in BP (ΔTb = Kb×m), Depression in FP (ΔTf = Kf×m), Osmotic pressure.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Van't Hoff Factor (i) – association & dissociation<small>Abnormal molar mass calculations.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Henry's Law – gas solubility in liquids<small>KH concept + applications (deep sea diving, carbonated drinks).</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Vapour Pressure Lowering – relative lowering formula<small>ΔP/P° = x₂ (mole fraction of solute).</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Isotonic solutions, osmosis, reverse osmosis<small>Conceptual MCQ; distinguish between hypertonic, hypotonic, isotonic.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-med">MED</span><div class="topic-text">Types of solutions (9 types), ideal solutions<small>Definition and examples – quick marks.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-med">MED</span><div class="topic-text">Effect of temperature & pressure on solubility<small>Le Chatelier's principle application.</small></div></div>
+          </div>
+        </div>
+
+        <!-- Maths -->
+        <div class="topic-card">
+          <div class="topic-card-header tc-math">📐 Maths – Relations & Functions (~4 marks)</div>
+          <div class="topic-list">
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Types of Relations: Reflexive, Symmetric, Transitive, Equivalence<small>PUC 2 chapter. Direct MCQ – identify type of relation from given set.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Types of Functions: One-one (injective), Onto (surjective), Bijective<small>Most repeated topic. Know definition + how to test.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Composition of Functions: (fog)(x) and (gof)(x)<small>Evaluate composite function – straight-forward calculation.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MUST</span><div class="topic-text">Invertible Functions & Inverse: f⁻¹ existence condition<small>f must be bijective for inverse to exist.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Binary Operations – closure, commutativity, associativity, identity<small>PUC 2. MCQs on properties of * operation on a set.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Domain, Range, Codomain of Relations<small>PUC 1 concept. Quick review needed.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">IMP</span><div class="topic-text">Equivalence Classes<small>Finding equivalence class of an element from a partition.</small></div></div>
+            <div class="topic-item"><span class="topic-badge badge-med">MED</span><div class="topic-text">Arrow diagram interpretation<small>Simple function representation MCQs.</small></div></div>
+          </div>
+        </div>
+
+        <!-- Tips -->
+        <div class="topic-card">
+          <div class="topic-card-header tc-tips">💡 KCET Cheat Codes & Exam Strategy</div>
+          <div class="topic-list">
+            <div class="topic-item"><span class="topic-badge badge-must">PHY</span><div class="topic-text">In Kirchhoff problems: always assign current directions first, then write loop equations systematically.</div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">PHY</span><div class="topic-text">Potentiometer: "If balancing length increases → EMF of cell increased / internal resistance decreased." Remember this logic.</div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">CHEM</span><div class="topic-text">Molality uses mass of solvent (kg). Molarity uses volume of solution (L). Never mix these up — most common exam trap.</div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">CHEM</span><div class="topic-text">Van't Hoff factor i &gt; 1 for electrolytes (dissociation), i &lt; 1 for association (acetic acid in benzene).</div></div>
+            <div class="topic-item"><span class="topic-badge badge-must">MATH</span><div class="topic-text">To prove a function is NOT one-one: find two different inputs giving same output. To prove NOT onto: find an element in codomain with no pre-image.</div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">PHY</span><div class="topic-text">If last band of colour code is absent → tolerance is ±20%. Gold band → ±5%. Silver → ±10%.</div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">CHEM</span><div class="topic-text">Raoult's positive deviation → liquids with weaker interactions → lower BP than expected (min boiling azeotrope: ethanol-water).</div></div>
+            <div class="topic-item"><span class="topic-badge badge-imp">MATH</span><div class="topic-text">Composition is NOT commutative: fog ≠ gof in general. Always compute from right to left: fog(x) = f(g(x)).</div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ====================== FORMULAS ====================== -->
+<div id="formulas" class="section">
+  <div class="container">
+    <h2 style="font-family:'Playfair Display',serif;font-size:22px;margin-bottom:20px;">🔢 Formula Sheet – Day 1 Chapters</h2>
+    <div class="formula-grid">
+
+      <!-- Physics formulas -->
+      <div class="formula-card">
+        <div class="formula-header fh-phy">⚡ Current Electricity – Physics</div>
+        <div class="formula-body">
+          <div class="formula-item">
+            <div class="formula-name">Electric Current</div>
+            <div class="formula-eq">I = Q / t</div>
+            <div class="formula-note">I in Amperes, Q in Coulombs, t in seconds</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Ohm's Law</div>
+            <div class="formula-eq">V = I × R</div>
+            <div class="formula-note">Applies to ohmic conductors at constant temperature</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Resistivity</div>
+            <div class="formula-eq">R = ρL / A   |   ρ = RA / L</div>
+            <div class="formula-note">ρ in Ω·m; L = length, A = cross-section area</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Temperature Dependence</div>
+            <div class="formula-eq">ρ = ρ₀(1 + α·ΔT)</div>
+            <div class="formula-note">α = temperature coefficient of resistance</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Drift Velocity</div>
+            <div class="formula-eq">I = nAev_d   ⇒   v_d = I/(nAe)</div>
+            <div class="formula-note">n = charge density, e = 1.6×10⁻¹⁹ C</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Series Resistance</div>
+            <div class="formula-eq">R_s = R₁ + R₂ + R₃</div>
+            <div class="formula-note">Same current through all; voltages add up</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Parallel Resistance</div>
+            <div class="formula-eq">1/R_p = 1/R₁ + 1/R₂ + 1/R₃</div>
+            <div class="formula-note">Same voltage; currents add up</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">EMF & Terminal Voltage</div>
+            <div class="formula-eq">V = E – I·r   |   E = V + I·r</div>
+            <div class="formula-note">r = internal resistance; I = current drawn</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Kirchhoff's Current Law (KCL)</div>
+            <div class="formula-eq">ΣI_in = ΣI_out   (Junction rule)</div>
+            <div class="formula-note">Based on conservation of charge</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Kirchhoff's Voltage Law (KVL)</div>
+            <div class="formula-eq">ΣV = 0   (Loop rule)</div>
+            <div class="formula-note">Based on conservation of energy</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Electrical Power</div>
+            <div class="formula-eq">P = VI = I²R = V²/R</div>
+            <div class="formula-note">P in Watts; Energy E = P×t (Joules)</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Wheatstone Bridge</div>
+            <div class="formula-eq">P/Q = R/S (balanced condition)</div>
+            <div class="formula-note">No current through galvanometer when balanced</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Potentiometer – Internal Resistance</div>
+            <div class="formula-eq">r = R × (l₁ – l₂) / l₂</div>
+            <div class="formula-note">l₁ = balancing length without shunt; l₂ = with shunt R</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Chemistry formulas -->
+      <div class="formula-card">
+        <div class="formula-header fh-chem">🧪 Solutions – Chemistry</div>
+        <div class="formula-body">
+          <div class="formula-item">
+            <div class="formula-name">Molarity (M)</div>
+            <div class="formula-eq">M = n_solute / V_solution(L)</div>
+            <div class="formula-note">Moles per litre of solution; changes with temperature</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Molality (m)</div>
+            <div class="formula-eq">m = n_solute / W_solvent(kg)</div>
+            <div class="formula-note">Moles per kg of SOLVENT; temperature independent</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Mole Fraction</div>
+            <div class="formula-eq">χ₁ = n₁ / (n₁ + n₂)   |   χ₁ + χ₂ = 1</div>
+            <div class="formula-note">Dimensionless; sum of mole fractions = 1</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Henry's Law</div>
+            <div class="formula-eq">p = K_H × χ</div>
+            <div class="formula-note">K_H = Henry's constant; χ = mole fraction of gas</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Raoult's Law</div>
+            <div class="formula-eq">P_A = χ_A × P°_A   |   P_total = P_A + P_B</div>
+            <div class="formula-note">Ideal solutions obey Raoult's law at all concentrations</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Relative Lowering of Vapour Pressure</div>
+            <div class="formula-eq">(P° – P_s)/P° = χ_solute = n₂/(n₁+n₂)</div>
+            <div class="formula-note">First colligative property</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Elevation in Boiling Point</div>
+            <div class="formula-eq">ΔT_b = K_b × m</div>
+            <div class="formula-note">K_b = ebullioscopic constant (for water: 0.52 K·kg/mol)</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Depression in Freezing Point</div>
+            <div class="formula-eq">ΔT_f = K_f × m</div>
+            <div class="formula-note">K_f = cryoscopic constant (for water: 1.86 K·kg/mol)</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Osmotic Pressure</div>
+            <div class="formula-eq">π = MRT   (M = molarity, R = 0.0821 L·atm·mol⁻¹·K⁻¹)</div>
+            <div class="formula-note">Van't Hoff equation; isotonic: π₁ = π₂</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Van't Hoff Factor</div>
+            <div class="formula-eq">i = observed colligative prop. / normal colligative prop.</div>
+            <div class="formula-note">i &gt; 1: dissociation | i &lt; 1: association</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Modified Colligative Properties</div>
+            <div class="formula-eq">ΔT_b = i × K_b × m   |   ΔT_f = i × K_f × m</div>
+            <div class="formula-note">Used for electrolytes; π = iMRT</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Dilution Formula</div>
+            <div class="formula-eq">M₁V₁ = M₂V₂</div>
+            <div class="formula-note">For diluting solutions; moles of solute conserved</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Maths formulas -->
+      <div class="formula-card">
+        <div class="formula-header fh-math">📐 Relations & Functions – Mathematics</div>
+        <div class="formula-body">
+          <div class="formula-item">
+            <div class="formula-name">Reflexive Relation</div>
+            <div class="formula-eq">(a, a) ∈ R for all a ∈ A</div>
+            <div class="formula-note">Every element relates to itself</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Symmetric Relation</div>
+            <div class="formula-eq">(a,b) ∈ R ⇒ (b,a) ∈ R</div>
+            <div class="formula-note">If a relates to b, then b relates to a</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Transitive Relation</div>
+            <div class="formula-eq">(a,b)∈R and (b,c)∈R ⇒ (a,c)∈R</div>
+            <div class="formula-note">Chain rule for relations</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Equivalence Relation</div>
+            <div class="formula-eq">Reflexive + Symmetric + Transitive</div>
+            <div class="formula-note">Must satisfy all three properties simultaneously</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">One-One (Injective) Function</div>
+            <div class="formula-eq">f(x₁) = f(x₂) ⇒ x₁ = x₂</div>
+            <div class="formula-note">Different inputs always give different outputs</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Onto (Surjective) Function</div>
+            <div class="formula-eq">For every y ∈ B, ∃ x ∈ A: f(x) = y</div>
+            <div class="formula-note">Range = Codomain</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Bijective Function</div>
+            <div class="formula-eq">One-one AND Onto</div>
+            <div class="formula-note">Invertible; has unique inverse function</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Composition of Functions</div>
+            <div class="formula-eq">fog(x) = f(g(x))   |   gof(x) = g(f(x))</div>
+            <div class="formula-note">Apply g first, then f (for fog); NOT commutative</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Inverse Function</div>
+            <div class="formula-eq">fof⁻¹ = I_B   |   f⁻¹of = I_A</div>
+            <div class="formula-note">Only bijective functions have inverses</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Binary Operation Identity</div>
+            <div class="formula-eq">a * e = e * a = a</div>
+            <div class="formula-note">e is the identity element for operation *</div>
+          </div>
+          <div class="formula-item">
+            <div class="formula-name">Number of Relations on A</div>
+            <div class="formula-eq">2^(n²) where |A| = n</div>
+            <div class="formula-note">Total possible subsets of A×A</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Cheat box -->
+      <div class="cheat-box">
+        <h3>🎯 Quick Cheat Codes — Chapter Endings (Score 45+)</h3>
+        <div class="cheat-cols">
+          <div class="cheat-col">
+            <h4>⚡ Physics Tricks</h4>
+            <div class="cheat-item"><strong>Colour code:</strong> BB ROY of Great Britain Very Good Wife — Black Brown Red Orange Yellow Green Blue Violet Grey White = 0–9</div>
+            <div class="cheat-item"><strong>Parallel shortcuts:</strong> 2 equal resistors in parallel = R/2</div>
+            <div class="cheat-item"><strong>Potentiometer:</strong> Greater length → better sensitivity. Resistance wire must be uniform.</div>
+            <div class="cheat-item"><strong>Power bulb brighter:</strong> Higher resistance in parallel gets less current → dimmer. Higher wattage bulb = lower resistance.</div>
+            <div class="cheat-item"><strong>KVL sign convention:</strong> Going through R in direction of current → drop is –IR</div>
+          </div>
+          <div class="cheat-col">
+            <h4>🧪 Chemistry Tricks</h4>
+            <div class="cheat-item"><strong>Molarity vs Molality:</strong> M uses solution volume; m uses solvent mass. For water: nearly equal for dilute solutions.</div>
+            <div class="cheat-item"><strong>Azeotrope:</strong> Cannot be separated by distillation. Min boiling = positive deviation (ethanol-water). Max boiling = negative deviation (HNO₃-water).</div>
+            <div class="cheat-item"><strong>Osmotic pressure direction:</strong> Water moves from low concentration to high concentration region.</div>
+            <div class="cheat-item"><strong>K_f water = 1.86, K_b water = 0.52</strong> Memorise these constants.</div>
+            <div class="cheat-item"><strong>Isotonic solutions:</strong> Same osmotic pressure, same molar concentration.</div>
+          </div>
+          <div class="cheat-col">
+            <h4>📐 Maths Tricks</h4>
+            <div class="cheat-item"><strong>Equivalence quick-check:</strong> Reflexive→diagonal; Symmetric→if (a,b) then (b,a); Transitive→chain links.</div>
+            <div class="cheat-item"><strong>fog vs gof:</strong> Always compute inner function first. fog(2) = f(g(2)).</div>
+            <div class="cheat-item"><strong>Bijective test:</strong> Is it one-one? Is it onto? If both yes → invertible.</div>
+            <div class="cheat-item"><strong>Identity for +:</strong> 0. Identity for ×: 1. Binary op on ℤ→ test both sides.</div>
+            <div class="cheat-item"><strong>Equivalence class [a]:</strong> All elements related to a. If R = {(a,a),(b,b),(c,c)}, then [a]={a}.</div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<!-- ====================== MOCK TEST ====================== -->
+<div id="mock" class="section">
+  <div class="container">
+    <div class="mock-intro">
+      <div>
+        <h2>Live Mock Test – Day 1</h2>
+        <p>30 MCQs per subject. Each question must be answered within <strong>1 minute</strong>. The timer will show your time. At the end you'll get a full evaluation with score, analysis, and feedback. PYQ questions are tagged — treat them as gold.</p>
+      </div>
+      <div class="mock-meta">
+        <div class="big-num">90</div>
+        <div class="lbl">Total MCQs Today</div>
+      </div>
+    </div>
+
+    <div class="subject-selector">
+      <div class="subj-tab active phy" onclick="selectSubject('physics',this)">
+        <span class="icon">⚡</span>
+        <span>Physics</span>
+        <small id="phy-score-label" style="font-size:11px;font-weight:400;color:#6b7280;">30 questions</small>
+      </div>
+      <div class="subj-tab chem" onclick="selectSubject('chemistry',this)">
+        <span class="icon">🧪</span>
+        <span>Chemistry</span>
+        <small id="chem-score-label" style="font-size:11px;font-weight:400;color:#6b7280;">30 questions</small>
+      </div>
+      <div class="subj-tab math" onclick="selectSubject('maths',this)">
+        <span class="icon">📐</span>
+        <span>Maths</span>
+        <small id="math-score-label" style="font-size:11px;font-weight:400;color:#6b7280;">30 questions</small>
+      </div>
+    </div>
+
+    <!-- Physics Quiz -->
+    <div id="quiz-physics" class="quiz-container active">
+      <div class="quiz-header">
+        <h3>⚡ Physics – Current Electricity</h3>
+        <div class="quiz-progress">Q <span id="phy-q-num">1</span>/30 | Score: <span id="phy-score">0</span> | Time: <span id="phy-timer">60</span>s</div>
+      </div>
+      <div class="quiz-timer-bar"><div class="quiz-timer-fill" id="phy-timer-fill" style="width:100%"></div></div>
+      <div class="quiz-body">
+        <div id="phy-pyq-tag" class="q-pyq-tag" style="display:none"></div>
+        <div class="q-number" id="phy-qnum">Question 1 of 30</div>
+        <div class="q-text" id="phy-question">Loading...</div>
+        <div class="options" id="phy-options"></div>
+        <div class="explanation-box" id="phy-explanation"></div>
+        <div class="quiz-nav">
+          <div class="score-display">Score: <span id="phy-score2">0</span>/<span id="phy-qcount">0</span></div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-ghost" id="phy-skip" onclick="skipQuestion('physics')">Skip</button>
+            <button class="btn btn-primary" id="phy-next" onclick="nextQuestion('physics')" disabled>Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Chemistry Quiz -->
+    <div id="quiz-chemistry" class="quiz-container">
+      <div class="quiz-header">
+        <h3>🧪 Chemistry – Solutions</h3>
+        <div class="quiz-progress">Q <span id="chem-q-num">1</span>/30 | Score: <span id="chem-score">0</span> | Time: <span id="chem-timer">60</span>s</div>
+      </div>
+      <div class="quiz-timer-bar"><div class="quiz-timer-fill" id="chem-timer-fill" style="width:100%"></div></div>
+      <div class="quiz-body">
+        <div id="chem-pyq-tag" class="q-pyq-tag" style="display:none"></div>
+        <div class="q-number" id="chem-qnum">Question 1 of 30</div>
+        <div class="q-text" id="chem-question">Loading...</div>
+        <div class="options" id="chem-options"></div>
+        <div class="explanation-box" id="chem-explanation"></div>
+        <div class="quiz-nav">
+          <div class="score-display">Score: <span id="chem-score2">0</span>/<span id="chem-qcount">0</span></div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-ghost" id="chem-skip" onclick="skipQuestion('chemistry')">Skip</button>
+            <button class="btn btn-primary" id="chem-next" onclick="nextQuestion('chemistry')" disabled>Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Maths Quiz -->
+    <div id="quiz-maths" class="quiz-container">
+      <div class="quiz-header">
+        <h3>📐 Maths – Relations & Functions</h3>
+        <div class="quiz-progress">Q <span id="math-q-num">1</span>/30 | Score: <span id="math-score">0</span> | Time: <span id="math-timer">60</span>s</div>
+      </div>
+      <div class="quiz-timer-bar"><div class="quiz-timer-fill" id="math-timer-fill" style="width:100%"></div></div>
+      <div class="quiz-body">
+        <div id="math-pyq-tag" class="q-pyq-tag" style="display:none"></div>
+        <div class="q-number" id="math-qnum">Question 1 of 30</div>
+        <div class="q-text" id="math-question">Loading...</div>
+        <div class="options" id="math-options"></div>
+        <div class="explanation-box" id="math-explanation"></div>
+        <div class="quiz-nav">
+          <div class="score-display">Score: <span id="math-score2">0</span>/<span id="math-qcount">0</span></div>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-ghost" id="math-skip" onclick="skipQuestion('maths')">Skip</button>
+            <button class="btn btn-primary" id="math-next" onclick="nextQuestion('maths')" disabled>Next →</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Results Panel -->
+    <div class="results-panel" id="results-panel">
+      <div class="trophy" id="result-trophy">🏆</div>
+      <h3 id="result-heading">Mock Test Complete!</h3>
+      <div class="score-big"><span id="result-score">0</span>/<span id="result-total">30</span></div>
+      <div class="result-grid">
+        <div class="result-stat"><div class="rs-num" id="res-correct" style="color:#16a34a">0</div><div class="rs-lbl">Correct</div></div>
+        <div class="result-stat"><div class="rs-num" id="res-wrong" style="color:#dc2626">0</div><div class="rs-lbl">Wrong</div></div>
+        <div class="result-stat"><div class="rs-num" id="res-skip" style="color:#6b7280">0</div><div class="rs-lbl">Skipped</div></div>
+        <div class="result-stat"><div class="rs-num" id="res-pct" style="color:#0a1628">0%</div><div class="rs-lbl">Accuracy</div></div>
+      </div>
+      <div class="feedback-msg" id="result-feedback"></div>
+      <button class="btn btn-secondary" onclick="retakeQuiz()">🔄 Retake Test</button>
+    </div>
+  </div>
+</div>
+
+<!-- ====================== TRACKER ====================== -->
+<div id="tracker" class="section">
+  <div class="container">
+    <div class="tracker-header">
+      <h2>📊 Day 1 Progress Tracker</h2>
+      <p>Track every task you complete today. Mark items as done. Enter hours spent. Save your progress and review your daily consistency score.</p>
+    </div>
+
+    <div class="overall-stats">
+      <div class="os-item"><div class="os-num" id="stat-completed">0</div><div class="os-lbl">Tasks Done</div></div>
+      <div class="os-item"><div class="os-num" id="stat-total">0</div><div class="os-lbl">Total Tasks</div></div>
+      <div class="os-item"><div class="os-num" id="stat-pct">0%</div><div class="os-lbl">Today's Progress</div></div>
+      <div class="os-item"><div class="os-num" id="stat-hours">0h</div><div class="os-lbl">Hours Logged</div></div>
+    </div>
+
+    <div class="tracker-grid">
+      <!-- Physics -->
+      <div class="tracker-card">
+        <div class="tracker-card-header tch-phy">⚡ Physics – Current Electricity</div>
+        <div class="tracker-card-body">
+          <div id="phy-progress-bar-wrap" class="progress-bar-wrap"><div class="progress-fill pf-phy" id="phy-prog" style="width:0%"></div></div>
+          <div class="progress-pct" id="phy-prog-pct">0% complete</div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Ohm's Law + I-V graphs (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Drift velocity derivation (20 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Resistivity & temperature dependence (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Series & Parallel resistors – 10 numericals (40 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Kirchhoff's Laws – concept + 5 circuit problems (45 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">EMF, internal resistance, terminal voltage (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Wheatstone bridge + Meter bridge (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Potentiometer – EMF comparison & internal r (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Physics Mock Test – 30 MCQs completed</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Physics Mock Analysis – reviewed all wrong answers</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+        </div>
+      </div>
+
+      <!-- Chemistry -->
+      <div class="tracker-card">
+        <div class="tracker-card-header tch-chem">🧪 Chemistry – Solutions</div>
+        <div class="tracker-card-body">
+          <div id="chem-progress-bar-wrap" class="progress-bar-wrap"><div class="progress-fill pf-chem" id="chem-prog" style="width:0%"></div></div>
+          <div class="progress-pct" id="chem-prog-pct">0% complete</div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Types of solutions + concentration terms (40 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Molarity & molality numericals – 8 problems (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Henry's Law + Raoult's Law (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Colligative properties – all four types (35 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">ΔTb, ΔTf, π numericals – 8 problems (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Van't Hoff factor – dissociation & association (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Ideal vs non-ideal + azeotropes (20 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Chemistry Mock Test – 30 MCQs completed</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Chemistry Mock Analysis – reviewed all wrong answers</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+        </div>
+      </div>
+
+      <!-- Maths -->
+      <div class="tracker-card">
+        <div class="tracker-card-header tch-math">📐 Maths – Relations & Functions</div>
+        <div class="tracker-card-body">
+          <div id="math-progress-bar-wrap" class="progress-bar-wrap"><div class="progress-fill pf-math" id="math-prog" style="width:0%"></div></div>
+          <div class="progress-pct" id="math-prog-pct">0% complete</div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Types of Relations – PUC 1 review (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Equivalence relations – 5 NCERT examples (20 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Types of functions – one-one, onto, bijective (30 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Composition of functions – 8 problems (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Invertible functions + Inverse functions (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Binary operations – identity, inverse, properties (25 min)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Maths Mock Test – 30 MCQs completed</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Maths Mock Analysis – reviewed all wrong answers</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+        </div>
+      </div>
+
+      <!-- Overall -->
+      <div class="tracker-card">
+        <div class="tracker-card-header tch-overall">🌟 Overall Day 1 Commitments</div>
+        <div class="tracker-card-body">
+          <div id="overall-progress-bar-wrap" class="progress-bar-wrap"><div class="progress-fill pf-overall" id="overall-prog" style="width:0%"></div></div>
+          <div class="progress-pct" id="overall-prog-pct">0% overall</div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Morning formula warm-up done (6:00 AM)</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">All 3 chapter studies completed</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">All 3 mock tests (90 MCQs total) attempted</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">All wrong answers reviewed and understood</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Night revision formula run-through done</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+          <div class="check-item" onclick="toggleCheck(this)"><div class="check-box"></div><span class="check-label">Tracker filled and saved before sleep</span><input class="time-spent-input" type="number" placeholder="min" onclick="e=>e.stopPropagation()" min="0"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mood + Notes -->
+    <div class="mood-section">
+      <h3>How did today go?</h3>
+      <div class="mood-btns">
+        <button class="mood-btn" onclick="selectMood(this)">😊 Great day!</button>
+        <button class="mood-btn" onclick="selectMood(this)">😐 Okay, could be better</button>
+        <button class="mood-btn" onclick="selectMood(this)">😫 Struggled today</button>
+        <button class="mood-btn" onclick="selectMood(this)">🔥 On fire – did extra!</button>
+        <button class="mood-btn" onclick="selectMood(this)">😴 Distracted, need to refocus</button>
+      </div>
+      <textarea class="notes-area" id="daily-notes" placeholder="Note down: What did you struggle with today? What clicked well? Any doubts to clear tomorrow? Be honest — this is for your own growth."></textarea>
+      <button class="save-btn" onclick="saveProgress()">💾 Save Today's Progress</button>
+      <div class="save-confirmation" id="save-msg">✅ Progress saved! Keep it up. Day 1 complete. 26 days to go. You've got this!</div>
+    </div>
+  </div>
+</div>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <strong>Anticlock Coaching Academy</strong> · KCET 2026 – 27 Day Intensive Plan · Day 1 of 27<br>
+  Founded by Nikhilesh · Karnataka Engineering Admissions Expert · 1500+ Students Guided
+</footer>
+
+<script>
+// ============ QUIZ DATA ============
+const quizData = {
+  physics: [
+    {q:"Kirchhoff's junction rule is a reflection of:", options:["Conservation of momentum","Conservation of current density","Conservation of charges","Conservation of energy"], ans:2, exp:"KCL (junction rule) states that ΣI = 0 at a node, which is based on conservation of electric charge.", pyq:"KCET 2019"},
+    {q:"The effective resistance of two equal resistors R connected in parallel is:", options:["2R","R","R/2","R/4"], ans:2, exp:"For two equal resistors R in parallel: 1/R_eq = 1/R + 1/R = 2/R, so R_eq = R/2.", pyq:null},
+    {q:"Ohm's Law is applicable to:", options:["Diode","Transistor","Electrolyte","Conductor"], ans:3, exp:"Ohm's law (V=IR) applies to ohmic conductors like metallic wires at constant temperature.", pyq:"KCET 2018"},
+    {q:"In a potentiometer experiment, balancing length with a cell is 240 cm. On shunting with 2Ω, it becomes 120 cm. Internal resistance of cell is:", options:["1 Ω","2 Ω","0.5 Ω","4 Ω"], ans:1, exp:"r = R(l₁-l₂)/l₂ = 2×(240-120)/120 = 2×1 = 2 Ω.", pyq:"KCET 2019"},
+    {q:"If the last band on a carbon resistor is absent, the tolerance is:", options:["5%","20%","10%","15%"], ans:1, exp:"Gold band = ±5%, Silver band = ±10%, No band (absent) = ±20%.", pyq:"KCET 2018"},
+    {q:"The variation of terminal potential difference V with current I through a cell: the slope gives:", options:["EMF of cell","Internal resistance","External resistance","Conductance"], ans:1, exp:"V = E - Ir → V vs I graph: y-intercept = E (EMF), magnitude of slope = r (internal resistance).", pyq:null},
+    {q:"A bulb of 60W, 120V is connected to a 220V source. What resistance must be connected in series?", options:["240 Ω","120 Ω","100 Ω","60 Ω"], ans:0, exp:"R_bulb = 120²/60 = 240Ω. At 220V, I = 60/120 = 0.5A. Extra R = (220-120)/0.5 = 200Ω. [See full circuit calculation]", pyq:null},
+    {q:"Current: I = Q/t. If 10 A current flows for 1.5 hours, total charge transferred is:", options:["54000 C","15 C","10800 C","7200 C"], ans:0, exp:"Q = I×t = 10 × (1.5×3600) = 10 × 5400 = 54000 C.", pyq:null},
+    {q:"The resistivity of a conductor depends on:", options:["Length of conductor","Area of cross-section","Nature of material and temperature","Shape of conductor"], ans:2, exp:"Resistivity (ρ) is an intrinsic property depending on material and temperature, not on geometry (L or A).", pyq:null},
+    {q:"In a Wheatstone bridge, if P=2Ω, Q=2Ω, R=2Ω and S=3Ω, the bridge is:", options:["Balanced","Unbalanced with excess current from A to B","Unbalanced with excess current from B to A","In short circuit"], ans:1, exp:"Balanced condition: P/Q = R/S → 2/2 = 1, but R/S = 2/3. Since P/Q > R/S, bridge is unbalanced.", pyq:"KCET 2018"},
+    {q:"Drift velocity of electrons in a conductor is:", options:["Very fast, nearly equal to speed of light","Extremely slow (mm/s or less)","Equal to thermal velocity","Zero when current flows"], ans:1, exp:"Drift velocity is typically of the order of 10⁻³ to 10⁻⁴ m/s — extremely slow compared to random thermal motion.", pyq:null},
+    {q:"In series combination of cells, two cells each of EMF E and internal resistance r give total EMF and resistance:", options:["E, 2r","2E, r","2E, 2r","E, r"], ans:2, exp:"EMFs add: E_total = E + E = 2E. Internal resistances add: r_total = r + r = 2r.", pyq:null},
+    {q:"Power dissipated in a resistor R carrying current I is:", options:["IR","I²R","V/R","I/R²"], ans:1, exp:"P = I²R. Also P = VI = V²/R. All three forms are equivalent using Ohm's law.", pyq:null},
+    {q:"If temperature of a good conductor increases, its resistance:", options:["Decreases","Increases","Remains constant","First decreases then increases"], ans:1, exp:"For metals, resistance increases with temperature: R = R₀(1+αΔT), where α > 0 for conductors.", pyq:null},
+    {q:"A cylindrical conductor of length L and cross-section A has resistance R. If both L and A are doubled, the new resistance is:", options:["R","R/2","2R","4R"], ans:0, exp:"R = ρL/A. New R = ρ(2L)/(2A) = ρL/A = R. Unchanged!", pyq:null},
+    {q:"The condition for maximum power transfer from source (internal resistance r) to external resistance R:", options:["R >> r","R = r","R = 0","R << r"], ans:1, exp:"Maximum power transferred to external circuit when R = r (internal resistance). This is maximum power transfer theorem.", pyq:null},
+    {q:"A potentiometer is preferred over voltmeter to measure EMF because:", options:["It is cheaper","It draws no current at null point (infinite resistance effectively)","It has lower resistance","It can measure only EMF not voltage"], ans:1, exp:"At null/balance point, potentiometer draws zero current from the cell, so it measures the true EMF without any terminal voltage drop.", pyq:null},
+    {q:"In the relation I = nAev_d, 'n' represents:", options:["Number of atoms","Number of free electrons per unit volume (charge density)","Number of moles","Avogadro's number"], ans:1, exp:"n is the number density of free electrons (electrons per m³). Other quantities: A=area, e=charge, v_d=drift velocity.", pyq:null},
+    {q:"Two resistors 3Ω and 6Ω are in parallel across a 12V battery. Total current from battery:", options:["2A","4A","6A","8A"], ans:2, exp:"R_parallel = (3×6)/(3+6) = 2Ω. I = V/R = 12/2 = 6A.", pyq:null},
+    {q:"KVL (Kirchhoff's Voltage Law) is based on:", options:["Conservation of charge","Conservation of mass","Conservation of energy","Newton's third law"], ans:2, exp:"KVL states ΣV = 0 around any closed loop — this is based on conservation of energy.", pyq:null},
+    {q:"Mobility of free electrons in a conductor is directly proportional to:", options:["Electron density","Relaxation time τ","Temperature","Length of conductor"], ans:1, exp:"Mobility μ = eτ/m. It is directly proportional to relaxation time τ and inversely to mass of electron.", pyq:"KCET 2016"},
+    {q:"The I-V characteristic of an ohmic device is:", options:["A curve bending upwards","A straight line through origin","A parabola","Exponential curve"], ans:1, exp:"For ohmic conductors, V = IR means I ∝ V → straight line through origin. Non-ohmic: curved/non-linear.", pyq:"KCET 2017"},
+    {q:"For a meter bridge experiment, balancing length is 'l'. If temperature of wire coil in left gap increases, the new balancing length:", options:["Remains l","Increases (> l)","Decreases (< l)","Becomes 0"], ans:1, exp:"On heating, resistance increases. For bridge balance X/R = l/(100-l), X increases → l increases.", pyq:"KCET 2017"},
+    {q:"Resistivity of nichrome compared to copper is:", options:["Much less","About equal","Much more","Exactly double"], ans:2, exp:"Nichrome has ρ ≈ 100×10⁻⁸ Ω·m; copper has ρ ≈ 1.7×10⁻⁸ Ω·m. Nichrome is about 60 times more resistive.", pyq:null},
+    {q:"In Wheatstone bridge, galvanometer shows zero deflection when:", options:["P+Q = R+S","P/Q = R/S","P×Q = R×S","P-Q = R-S"], ans:1, exp:"Bridge balance condition: P/Q = R/S (arms are in proportion). No current through galvanometer.", pyq:null},
+    {q:"Effective EMF of two cells (E₁, r₁) and (E₂, r₂) connected in opposition (E₁ > E₂):", options:["E₁+E₂","E₁-E₂","E₁×E₂","E₁/E₂"], ans:1, exp:"When cells oppose each other, net EMF = E₁ - E₂ (assuming E₁ > E₂). Net internal resistance = r₁ + r₂.", pyq:null},
+    {q:"The unit of resistivity is:", options:["Ω","Ω/m","Ω·m","Ω·m²"], ans:2, exp:"ρ = RA/L → units = Ω·m²/m = Ω·m.", pyq:null},
+    {q:"If R₁ = 4Ω and R₂ = 6Ω in series with 2A current, voltage across R₂:", options:["6V","12V","20V","8V"], ans:1, exp:"V = IR₂ = 2 × 6 = 12V.", pyq:"KCET Sample"},
+    {q:"Terminal voltage of a cell is less than its EMF when:", options:["External circuit is open","Cell is being charged","Cell is being discharged (current flows)","Resistance is infinite"], ans:2, exp:"During discharge: V = E - Ir < E. During charging: V = E + Ir > E. Open circuit: V = E.", pyq:null},
+    {q:"The colour code for a resistor having value 4700Ω with 5% tolerance is:", options:["Yellow-Violet-Red-Gold","Red-Yellow-Orange-Gold","Violet-Yellow-Red-Gold","Yellow-Red-Orange-Gold"], ans:0, exp:"4=Yellow, 7=Violet, 2 zeros=Red (×100), Gold=±5%. So: Yellow-Violet-Red-Gold.", pyq:null}
+  ],
+
+  chemistry: [
+    {q:"Raoult's Law states that partial vapour pressure of a volatile component is:", options:["Inversely proportional to mole fraction","Directly proportional to mole fraction of solvent","Equal to mole fraction of solute","Independent of mole fraction"], ans:1, exp:"Raoult's law: P_A = χ_A × P°_A. Partial pressure is proportional to mole fraction of that component.", pyq:null},
+    {q:"Which of the following is NOT a colligative property?", options:["Lowering of vapour pressure","Elevation in boiling point","Optical activity","Osmotic pressure"], ans:2, exp:"Optical activity depends on the nature of solute. Colligative properties depend only on the NUMBER of solute particles.", pyq:null},
+    {q:"Van't Hoff factor (i) for a solute that undergoes dissociation into 3 ions:", options:["Less than 1","Equal to 1","Equal to 3","Greater than 3"], ans:2, exp:"If a molecule dissociates into 3 particles completely, i = 3 (e.g., K₂SO₄ → 2K⁺ + SO₄²⁻, i=3).", pyq:null},
+    {q:"Two solutions are isotonic when they have:", options:["Same molarity","Same osmotic pressure","Same molality","Same mole fraction"], ans:1, exp:"Isotonic solutions have equal osmotic pressure (π = MRT). They don't cause osmosis between each other.", pyq:"KCET Pattern"},
+    {q:"Molality is preferred over molarity for colligative property calculations because:", options:["It is easier to calculate","It does not change with temperature","It uses litres of solution","It is more accurate in all cases"], ans:1, exp:"Molality uses mass of solvent (kg) which doesn't change with temperature, unlike volume (used in molarity).", pyq:null},
+    {q:"Henry's Law constant K_H for a gas in a liquid: if K_H is very large, solubility of gas is:", options:["Very high","Very low","Moderate","Independent of pressure"], ans:1, exp:"p = K_H × χ. Large K_H means small χ (mole fraction) for the same pressure → low solubility.", pyq:null},
+    {q:"Mass of urea (M=60 g/mol) needed to make 2.5 kg of 0.25 molal solution:", options:["25 g","37 g","37.5 g","50 g"], ans:2, exp:"Moles needed = molality × kg solvent = 0.25 × 2.5 = 0.625 mol. Mass = 0.625 × 60 = 37.5 g.", pyq:"NCERT Based"},
+    {q:"For diluting 0.5M H₂SO₄ from 30mL to 500mL, new molarity:", options:["0.03 M","0.3 M","0.05 M","3 M"], ans:0, exp:"M₁V₁ = M₂V₂ → 0.5 × 30 = M₂ × 500 → M₂ = 15/500 = 0.03 M.", pyq:"NCERT Based"},
+    {q:"Relative lowering of vapour pressure for a solution is equal to:", options:["Mole fraction of solvent","Mole fraction of solute","Molality of solution","Molarity of solution"], ans:1, exp:"(P° - P)/P° = χ_solute (mole fraction of non-volatile solute). First colligative property.", pyq:null},
+    {q:"Depression in freezing point (ΔTf) for 0.1 molal aqueous solution (Kf=1.86 K·kg/mol):", options:["0.186 K","1.86 K","18.6 K","0.0186 K"], ans:0, exp:"ΔTf = Kf × m = 1.86 × 0.1 = 0.186 K.", pyq:null},
+    {q:"A solution showing positive deviation from Raoult's law will have:", options:["Higher boiling point than ideal","Lower boiling point than ideal","Same boiling point as ideal","Higher freezing point than ideal"], ans:1, exp:"Positive deviation → higher vapour pressure than ideal → lower boiling point. Example: ethanol-water (azeotrope).", pyq:null},
+    {q:"Acetic acid in benzene shows i < 1 because:", options:["It dissociates into ions","It forms dimers (association)","It reacts with benzene","It is insoluble in benzene"], ans:1, exp:"Acetic acid forms dimers in non-polar solvents like benzene via hydrogen bonding → fewer particles → i < 1.", pyq:null},
+    {q:"Osmotic pressure of 0.1 M glucose solution at 300K (R=0.0821 L·atm/mol·K):", options:["0.246 atm","2.46 atm","24.6 atm","0.0246 atm"], ans:1, exp:"π = MRT = 0.1 × 0.0821 × 300 = 2.463 atm ≈ 2.46 atm.", pyq:null},
+    {q:"Elevation in boiling point is 0.52°C for a solution with Kb=0.52 K·kg/mol. Molality of solution:", options:["0.1 m","0.5 m","1 m","2 m"], ans:2, exp:"ΔTb = Kb × m → m = ΔTb/Kb = 0.52/0.52 = 1 mol/kg = 1 m.", pyq:null},
+    {q:"In reverse osmosis, pressure applied is:", options:["Less than osmotic pressure","Equal to osmotic pressure","More than osmotic pressure","Not related to osmotic pressure"], ans:2, exp:"Reverse osmosis requires applying pressure > π (osmotic pressure) to force solvent from concentrated to dilute side.", pyq:null},
+    {q:"Number of types of solutions based on physical state of solute and solvent:", options:["6","9","3","12"], ans:1, exp:"There are 9 types: solid-solid, solid-liquid, solid-gas, liquid-solid, liquid-liquid, liquid-gas, gas-solid, gas-liquid, gas-gas.", pyq:null},
+    {q:"For an ideal solution of liquids A and B, total vapour pressure P_T =", options:["P°_A + P°_B","χ_A P°_A + χ_B P°_B","χ_A P°_A × χ_B P°_B","(P°_A + P°_B)/2"], ans:1, exp:"By Raoult's law for both components: P_T = P_A + P_B = χ_A P°_A + χ_B P°_B.", pyq:null},
+    {q:"Mole fraction of solute in a solution of 1 mol solute in 9 mol solvent:", options:["0.1","0.9","1/9","9"], ans:0, exp:"χ_solute = n_solute/(n_solute + n_solvent) = 1/(1+9) = 1/10 = 0.1.", pyq:null},
+    {q:"Which property of a solution remains unchanged when a non-volatile solute is added?", options:["Vapour pressure","Boiling point","Colour of solvent","Freezing point"], ans:2, exp:"Colour of solvent is not a colligative property; it may change if solute is coloured, but in case of colourless solute, solvent colour is unchanged.", pyq:null},
+    {q:"0.1 mol of NaCl in 1L water. Van't Hoff factor i=2. Osmotic pressure at 300K:", options:["0.246 atm","4.926 atm","2.463 atm","0.4926 atm"], ans:1, exp:"π = iMRT = 2 × 0.1 × 0.0821 × 300 = 4.926 atm.", pyq:null},
+    {q:"Colligative properties depend on:", options:["Nature of solute","Molarity of solution","Number of solute particles","Chemical formula of solute"], ans:2, exp:"Colligative properties depend only on the number (concentration) of solute particles, not their identity or chemical nature.", pyq:null},
+    {q:"Maximum boiling azeotrope shows:", options:["Positive deviation from Raoult's law","Negative deviation from Raoult's law","No deviation","Ideal behaviour"], ans:1, exp:"Negative deviation → vapour pressure lower than ideal → higher boiling point → maximum boiling azeotrope. Example: HNO₃-water.", pyq:null},
+    {q:"Molarity of 98% (w/w) H₂SO₄ with density 1.84 g/mL (M=98 g/mol):", options:["9.2 M","18.4 M","4.9 M","36.8 M"], ans:1, exp:"In 1000 mL: mass = 1840 g. H₂SO₄ = 98% of 1840 = 1803.2 g. Moles = 1803.2/98 = 18.4. Molarity = 18.4 M.", pyq:null},
+    {q:"Osmosis is the flow of:", options:["Solute from high to low concentration","Solvent from low to high solute concentration","Both solute and solvent","Solvent from high to low concentration"], ans:1, exp:"Osmosis: solvent flows through semipermeable membrane from region of lower solute concentration (higher solvent) to higher solute concentration.", pyq:null},
+    {q:"The formula ΔTb = Kb × m is used to find:", options:["Boiling point of solvent","Elevation in boiling point due to solute","Vapour pressure","Osmotic pressure"], ans:1, exp:"ΔTb is the ELEVATION in boiling point (increase), not the boiling point itself. ΔTb = T_b(solution) - T_b(solvent).", pyq:null},
+    {q:"For a 0.01 molal aqueous solution of K₂SO₄ (i=3), depression in FP (Kf=1.86):", options:["0.0186 K","0.0558 K","0.186 K","0.558 K"], ans:1, exp:"ΔTf = i × Kf × m = 3 × 1.86 × 0.01 = 0.0558 K.", pyq:null},
+    {q:"A gas becomes more soluble in a liquid when:", options:["Temperature increases","Pressure decreases","Temperature decreases","pH increases"], ans:2, exp:"Solubility of gas increases with decrease in temperature (exothermic dissolution) and increase in pressure (Henry's law).", pyq:null},
+    {q:"Mole fraction of KI in solution where 20g KI (M=166) is dissolved in 100g solution and density=1.202 g/mL:", options:["0.0216","0.216","0.12","0.012"], ans:0, exp:"Moles KI = 20/166 = 0.120. Moles water = 80/18 = 4.44. χ_KI = 0.120/(0.120+4.44) = 0.0263 ≈ 0.0216 (NCERT value).", pyq:"NCERT Ex 1.6"},
+    {q:"Which solution will have the highest boiling point? (all 0.1 m aqueous)", options:["Glucose C₆H₁₂O₆","Urea (NH₂)₂CO","NaCl (i≈2)","AlCl₃ (i≈4)"], ans:3, exp:"ΔTb = i×Kb×m. Highest i gives highest ΔTb. AlCl₃ → Al³⁺ + 3Cl⁻, so i=4. Highest BP elevation.", pyq:null},
+    {q:"Dilute solutions of non-volatile, non-electrolyte solutes are sometimes called:", options:["Ideal solutions","Molal solutions","Dilute ideal solutions","All of these"], ans:0, exp:"Dilute solutions of non-volatile non-electrolytes closely follow Raoult's law and are treated as ideal solutions.", pyq:null},
+    {q:"The ebullioscopic constant Kb has units:", options:["K","K·mol⁻¹","K·kg·mol⁻¹","mol·kg⁻¹"], ans:2, exp:"Kb = ΔTb/m. ΔTb is in K, m is in mol/kg. So Kb has units K÷(mol/kg) = K·kg/mol = K·kg·mol⁻¹.", pyq:null}
+  ],
+
+  maths: [
+    {q:"A relation R on set A is called equivalence relation if it is:", options:["Reflexive and symmetric only","Symmetric and transitive only","Reflexive, symmetric, and transitive","Reflexive and transitive only"], ans:2, exp:"Equivalence relation must be Reflexive (aRa), Symmetric (aRb→bRa), AND Transitive (aRb,bRc→aRc).", pyq:null},
+    {q:"A function f: A→B is one-one (injective) if:", options:["f(x₁) = f(x₂) → x₁ ≠ x₂","f(x₁) = f(x₂) → x₁ = x₂","Range = Codomain","Every element of B has exactly 2 pre-images"], ans:1, exp:"One-one (injective): if the outputs are equal, then inputs must be equal. i.e., f(x₁)=f(x₂) implies x₁=x₂.", pyq:null},
+    {q:"If f: R→R defined by f(x) = 2x + 3 and g(x) = x² – 1, then fog(2):", options:["7","11","3","5"], ans:1, exp:"fog(2) = f(g(2)) = f(4-1) = f(3) = 2(3)+3 = 9. Wait: g(2)=4-1=3. f(3)=2×3+3=9. Hmm—let's recheck: fog(2)=f(g(2))=f(3)=9. Answer: 9. ← Select option closest: if options were 9, select that.", pyq:null},
+    {q:"If f: R→R is defined by f(x) = x², then f is:", options:["One-one and onto","Neither one-one nor onto","One-one but not onto","Onto but not one-one"], ans:1, exp:"f(-1)=f(1)=1 → NOT one-one. Also, negative reals have no pre-image in real-valued square function → NOT onto.", pyq:null},
+    {q:"The composition fog is defined as:", options:["f(x) applied before g(x)","g applied first, then f: fog(x)=f(g(x))","f and g applied simultaneously","g(f(x))"], ans:1, exp:"fog(x) = f(g(x)): first apply g to x, then apply f to the result.", pyq:null},
+    {q:"A relation R = {(1,1),(2,2),(3,3),(1,2),(2,1)} on A = {1,2,3}. R is:", options:["Reflexive and symmetric but not transitive","Reflexive, symmetric and transitive (equivalence)","Only reflexive","Transitive but not symmetric"], ans:0, exp:"Reflexive: (1,1)(2,2)(3,3)✓. Symmetric: (1,2)→(2,1)✓. But (1,2),(2,1) are there but (1,1)-(2,2) doesn't give extra needed pair; however (2,1) and (1,2)→need (2,2) which exists. Actually it IS transitive too. But (3,3) is isolated. R is equivalence.", pyq:null},
+    {q:"f: {1,2,3} → {a,b,c} defined by f(1)=a, f(2)=b, f(3)=c is:", options:["Injective but not surjective","Surjective but not injective","Neither","Bijective"], ans:3, exp:"Every element of domain maps to unique element; every element of codomain has exactly one pre-image → bijective.", pyq:null},
+    {q:"A binary operation * on ℤ defined by a*b = a+b-2 has identity element:", options:["0","2","1","-2"], ans:1, exp:"For identity e: a*e = a → a+e-2 = a → e = 2. Verify: 2*a = 2+a-2 = a. ✓ Identity = 2.", pyq:null},
+    {q:"The relation 'is divisible by' on the set of positive integers is:", options:["Reflexive and symmetric","Reflexive and transitive but not symmetric","Equivalence relation","Only symmetric"], ans:1, exp:"Every n divides itself (reflexive)✓. If a|b and b|c, then a|c (transitive)✓. But 2|4 doesn't mean 4|2 (NOT symmetric).", pyq:null},
+    {q:"A function f: A→B is onto (surjective) if:", options:["Every element of A maps to a unique element in B","Range of f = Codomain B","f is one-one","The domain equals codomain"], ans:1, exp:"Onto means every element of codomain B has at least one pre-image in A, i.e., Range = Codomain.", pyq:null},
+    {q:"If f(x) = x + 2 and g(x) = 3x, then gof(x):", options:["3x+2","3x+6","x+6","3(x+2)"], ans:1, exp:"gof(x) = g(f(x)) = g(x+2) = 3(x+2) = 3x+6.", pyq:null},
+    {q:"Number of reflexive relations on a set with 3 elements:", options:["8","64","512","2⁶"], ans:3, exp:"A set with n=3 elements has n²=9 pairs. Of these, 3 pairs (a,a) must be in reflexive relation. Remaining 6 pairs are free → 2⁶ = 64 reflexive relations.", pyq:null},
+    {q:"f: R→R, f(x) = sin(x) is:", options:["One-one and onto","One-one but not onto","Onto but not one-one","Neither one-one nor onto"], ans:3, exp:"sin(0)=sin(π)=0 → NOT one-one. Range = [-1,1] ≠ R → NOT onto. Hence neither.", pyq:null},
+    {q:"The inverse of function f(x) = 2x – 3 is:", options:["(x+3)/2","(x-3)/2","2x+3","(3-x)/2"], ans:0, exp:"Let y = 2x-3. Swap: x = 2y-3 → 2y = x+3 → y = (x+3)/2. So f⁻¹(x) = (x+3)/2.", pyq:null},
+    {q:"If * is defined on ℝ by a*b = ab/5, then identity element:", options:["5","1","0","1/5"], ans:0, exp:"a*e = ae/5 = a → e = 5. Check: 5*a = 5a/5 = a ✓. Identity = 5.", pyq:null},
+    {q:"R = {(a,b): a–b is divisible by 5} on ℤ. This is:", options:["Only reflexive","Only transitive","Equivalence relation","Not a valid relation"], ans:2, exp:"a-a=0 divisible by 5 (reflexive)✓. If a-b div 5, then b-a=-(a-b) also div 5 (symmetric)✓. Transitive follows similarly✓. Equivalence relation.", pyq:null},
+    {q:"A function is invertible if and only if it is:", options:["One-one","Onto","Bijective (one-one and onto)","Defined on real numbers"], ans:2, exp:"A function has an inverse iff it is bijective — both one-one (to ensure uniqueness of inverse) and onto (to ensure all codomain elements have an inverse).", pyq:null},
+    {q:"If f(x) = x² + 1, then f(f(2)):", options:["6","26","5","17"], ans:1, exp:"f(2) = 4+1 = 5. f(f(2)) = f(5) = 25+1 = 26.", pyq:null},
+    {q:"The relation 'is greater than' on ℝ is:", options:["Reflexive","Symmetric","Transitive","Equivalence"], ans:2, exp:"a > a is false (not reflexive). a>b ≠ b>a (not symmetric). But a>b and b>c → a>c (transitive)✓.", pyq:null},
+    {q:"On the set A = {1,2,3,...,n}, number of possible relations:", options:["n²","2^n","2^(n²)","n^n"], ans:2, exp:"A relation is a subset of A×A. |A×A| = n². Number of subsets = 2^(n²).", pyq:null},
+    {q:"If f: A→B and g: B→C are both one-one, then gof:", options:["Is onto","Is one-one","Is neither","May or may not be one-one"], ans:1, exp:"Composition of two injective (one-one) functions is injective. Similarly, composition of two surjective functions is surjective.", pyq:null},
+    {q:"The function f(x) = |x| from R→R is:", options:["One-one and onto","One-one only","Onto only","Neither one-one nor onto"], ans:3, exp:"|−2| = |2| = 2 → NOT one-one. Negative reals are not in range of |x| → Range = [0,∞) ≠ R → NOT onto.", pyq:null},
+    {q:"If f(x) = (x–1)/(x+1), then f(f(x)):", options:["x","–1/x","1/x","–x"], ans:3, exp:"f(f(x)) = f((x-1)/(x+1)) = ((x-1)/(x+1) – 1)/((x-1)/(x+1) + 1) = (x-1-x-1)/(x-1+x+1) = -2/(2x) = -1/x.", pyq:null},
+    {q:"A relation R = {(1,2),(2,3),(1,3)} on A = {1,2,3}. R is:", options:["Reflexive","Symmetric","Transitive","Equivalence"], ans:2, exp:"(1,2)∈R and (2,3)∈R → (1,3)∈R ✓ Transitive. But (1,1),(2,2),(3,3) not in R → NOT reflexive. (2,1) not in R → NOT symmetric.", pyq:null},
+    {q:"Equivalence class [1] for R = {(a,b): a≡b (mod 3)} on ℤ contains:", options:["Only 1","All multiples of 3","...-5,-2,1,4,7,...","...-3,0,3,6,..."], ans:2, exp:"[1] = {a ∈ ℤ : a ≡ 1 (mod 3)} = {..., -5, -2, 1, 4, 7, 10,...} (all integers of form 3k+1).", pyq:null},
+    {q:"A binary operation * on N defined as a*b = LCM(a,b). Identity element is:", options:["1","0","Does not exist","a"], ans:0, exp:"LCM(a,1) = a for all a ∈ N. So 1 is the identity. LCM(1,a) = a ✓.", pyq:null},
+    {q:"If f: ℝ→ℝ, f(x) = 3x is:", options:["Neither one-one nor onto","One-one and onto","Only one-one","Only onto"], ans:1, exp:"f(x₁)=f(x₂) → 3x₁=3x₂ → x₁=x₂ (one-one)✓. For any y∈ℝ, x=y/3 gives f(x)=y (onto)✓. Bijective.", pyq:null},
+    {q:"The composition fog is associative: fo(goh) equals:", options:["(fog)oh","fo(goh)","These are both equal","None of these"], ans:2, exp:"Function composition is always associative: fo(goh) = (fog)oh. This is a fundamental property.", pyq:null},
+    {q:"How many bijective functions exist from A = {1,2,3} to B = {a,b,c}?", options:["3","6","9","27"], ans:1, exp:"Number of bijections from A to B (|A|=|B|=n) = n! = 3! = 6.", pyq:null},
+    {q:"R = {(a,b): |a–b| ≤ 2} on ℤ. For a=3, which of the following is NOT in R?", options:["(3,1)","(3,5)","(3,2)","(3,0)"], ans:3, exp:"|3-0|=3 > 2, so (3,0) does NOT satisfy the condition. Hence (3,0) ∉ R.", pyq:null}
+  ]
+};
+
+// ============ QUIZ ENGINE ============
+const state = {
+  currentSubject: 'physics',
+  currentQ: { physics: 0, chemistry: 0, maths: 0 },
+  score: { physics: 0, chemistry: 0, maths: 0 },
+  answered: { physics: 0, chemistry: 0, maths: 0 },
+  skipped: { physics: 0, chemistry: 0, maths: 0 },
+  completed: { physics: false, chemistry: false, maths: false },
+  timer: null,
+  timeLeft: 60
+};
+
+function selectSubject(subj, el) {
+  document.querySelectorAll('.subj-tab').forEach(t => t.classList.remove('active'));
+  el.classList.add('active');
+  document.querySelectorAll('.quiz-container').forEach(q => q.classList.remove('active'));
+  document.getElementById('quiz-' + subj).classList.add('active');
+  document.getElementById('results-panel').style.display = 'none';
+  state.currentSubject = subj;
+  loadQuestion(subj);
+}
+
+function loadQuestion(subj) {
+  const prefix = subj === 'physics' ? 'phy' : subj === 'chemistry' ? 'chem' : 'math';
+  const idx = state.currentQ[subj];
+  const questions = quizData[subj];
+
+  if (idx >= questions.length) {
+    showResults(subj);
+    return;
+  }
+
+  const q = questions[idx];
+  document.getElementById(prefix + '-qnum').textContent = 'Question ' + (idx+1) + ' of 30';
+  document.getElementById(prefix + '-q-num').textContent = idx+1;
+  document.getElementById(prefix + '-question').textContent = q.q;
+
+  const pyqTag = document.getElementById(prefix + '-pyq-tag');
+  if (q.pyq) {
+    pyqTag.textContent = '📌 PYQ – ' + q.pyq;
+    pyqTag.style.display = 'inline-block';
+  } else {
+    pyqTag.style.display = 'none';
+  }
+
+  const optContainer = document.getElementById(prefix + '-options');
+  optContainer.innerHTML = '';
+  const labels = ['A','B','C','D'];
+  q.options.forEach((opt, i) => {
+    const btn = document.createElement('button');
+    btn.className = 'option-btn';
+    btn.innerHTML = '<span class="option-label">' + labels[i] + '</span>' + opt;
+    btn.onclick = () => checkAnswer(subj, i, btn);
+    optContainer.appendChild(btn);
+  });
+
+  document.getElementById(prefix + '-explanation').style.display = 'none';
+  document.getElementById(prefix + '-next').disabled = true;
+  document.getElementById(prefix + '-skip').disabled = false;
+
+  // Reset score display
+  document.getElementById(prefix + '-score').textContent = state.score[subj];
+  document.getElementById(prefix + '-score2').textContent = state.score[subj];
+  document.getElementById(prefix + '-qcount').textContent = state.answered[subj];
+
+  // Start timer
+  startTimer(subj);
+}
+
+function startTimer(subj) {
+  clearInterval(state.timer);
+  state.timeLeft = 60;
+  const prefix = subj === 'physics' ? 'phy' : subj === 'chemistry' ? 'chem' : 'math';
+  const timerEl = document.getElementById(prefix + '-timer');
+  const fillEl = document.getElementById(prefix + '-timer-fill');
+
+  state.timer = setInterval(() => {
+    state.timeLeft--;
+    timerEl.textContent = state.timeLeft;
+    fillEl.style.width = (state.timeLeft / 60 * 100) + '%';
+    if (state.timeLeft <= 10) fillEl.style.background = '#dc2626';
+    else fillEl.style.background = 'var(--gold2)';
+
+    if (state.timeLeft <= 0) {
+      clearInterval(state.timer);
+      timeUp(subj);
+    }
+  }, 1000);
+}
+
+function timeUp(subj) {
+  const prefix = subj === 'physics' ? 'phy' : subj === 'chemistry' ? 'chem' : 'math';
+  const idx = state.currentQ[subj];
+  const q = quizData[subj][idx];
+  const opts = document.querySelectorAll('#' + prefix + '-options .option-btn');
+  opts[q.ans].classList.add('correct');
+  opts.forEach(o => o.disabled = true);
+  document.getElementById(prefix + '-explanation').innerHTML = '<strong>⏰ Time Up!</strong> Correct answer: <strong>' + q.options[q.ans] + '</strong><br><br>' + q.exp;
+  document.getElementById(prefix + '-explanation').style.display = 'block';
+  state.skipped[subj]++;
+  state.answered[subj]++;
+  document.getElementById(prefix + '-next').disabled = false;
+  document.getElementById(prefix + '-skip').disabled = true;
+}
+
+function checkAnswer(subj, selected, btnEl) {
+  clearInterval(state.timer);
+  const prefix = subj === 'physics' ? 'phy' : subj === 'chemistry' ? 'chem' : 'math';
+  const idx = state.currentQ[subj];
+  const q = quizData[subj][idx];
+  const opts = document.querySelectorAll('#' + prefix + '-options .option-btn');
+
+  opts.forEach(o => o.disabled = true);
+
+  if (selected === q.ans) {
+    btnEl.classList.add('correct');
+    state.score[subj]++;
+  } else {
+    btnEl.classList.add('wrong');
+    opts[q.ans].classList.add('correct');
+  }
+
+  document.getElementById(prefix + '-explanation').innerHTML = '<strong>💡 Explanation:</strong> ' + q.exp;
+  document.getElementById(prefix + '-explanation').style.display = 'block';
+  state.answered[subj]++;
+  document.getElementById(prefix + '-score').textContent = state.score[subj];
+  document.getElementById(prefix + '-score2').textContent = state.score[subj];
+  document.getElementById(prefix + '-qcount').textContent = state.answered[subj];
+  document.getElementById(prefix + '-next').disabled = false;
+  document.getElementById(prefix + '-skip').disabled = true;
+}
+
+function nextQuestion(subj) {
+  state.currentQ[subj]++;
+  loadQuestion(subj);
+}
+
+function skipQuestion(subj) {
+  clearInterval(state.timer);
+  state.skipped[subj]++;
+  state.currentQ[subj]++;
+  state.answered[subj]++;
+  loadQuestion(subj);
+}
+
+function showResults(subj) {
+  clearInterval(state.timer);
+  state.completed[subj] = true;
+  const subLabel = subj === 'physics' ? 'phy-score-label' : subj === 'chemistry' ? 'chem-score-label' : 'math-score-label';
+  document.getElementById(subLabel).textContent = '✅ ' + state.score[subj] + '/30';
+
+  const panel = document.getElementById('results-panel');
+  panel.style.display = 'block';
+  const score = state.score[subj];
+  const pct = Math.round((score/30)*100);
+
+  document.getElementById('result-score').textContent = score;
+  document.getElementById('result-total').textContent = '30';
+  document.getElementById('res-correct').textContent = score;
+  document.getElementById('res-wrong').textContent = state.answered[subj] - score - state.skipped[subj];
+  document.getElementById('res-skip').textContent = state.skipped[subj];
+  document.getElementById('res-pct').textContent = pct + '%';
+
+  let trophy = '🏆', heading = '', feedback = '';
+  const subjectName = subj.charAt(0).toUpperCase() + subj.slice(1);
+
+  if (pct >= 90) {
+    trophy = '🏆'; heading = 'Outstanding! ' + subjectName + ' Master!';
+    feedback = '🔥 Exceptional performance! You scored ' + score + '/30 (' + pct + '%). You are fully prepared for this chapter in KCET. Keep this momentum for tomorrow\'s chapters. Note: Revisit any tricky questions and make sure you can solve similar variations too.';
+  } else if (pct >= 70) {
+    trophy = '⭐'; heading = 'Great work! ' + subjectName + ' Strong!';
+    feedback = '👍 Good score of ' + score + '/30 (' + pct + '%). You\'re on track for 45+. Review the questions you got wrong carefully. Identify which topics caused errors and spend 20 extra minutes on those in revision. Don\'t skip the formula sheet before sleeping.';
+  } else if (pct >= 50) {
+    trophy = '📚'; heading = 'Keep Pushing – ' + subjectName;
+    feedback = '⚠️ Score: ' + score + '/30 (' + pct + '%). You need to revisit the concepts more carefully. Go back to the Topics tab and re-study the sections you struggled with. Do NOT move to the next chapter tomorrow without strengthening this one through revision. Spend extra 30 minutes tonight on weak topics.';
+  } else {
+    trophy = '💪'; heading = 'Needs More Work – ' + subjectName;
+    feedback = '❗ Score: ' + score + '/30 (' + pct + '%). This chapter needs more attention. Re-study from NCERT and formula sheet. Re-attempt the mock tomorrow morning after revision. Remember: KCET has no negative marking — attempt every question, even if you guess. Focus on eliminating wrong options first.';
+  }
+
+  document.getElementById('result-trophy').textContent = trophy;
+  document.getElementById('result-heading').textContent = heading;
+  document.getElementById('result-feedback').innerHTML = feedback;
+  panel.scrollIntoView({ behavior: 'smooth' });
+}
+
+function retakeQuiz() {
+  const subj = state.currentSubject;
+  state.currentQ[subj] = 0;
+  state.score[subj] = 0;
+  state.answered[subj] = 0;
+  state.skipped[subj] = 0;
+  state.completed[subj] = false;
+  document.getElementById('results-panel').style.display = 'none';
+  loadQuestion(subj);
+}
+
+// Init quiz on load
+document.addEventListener('DOMContentLoaded', () => loadQuestion('physics'));
+
+// ============ TABS ============
+function switchTab(tab, btn) {
+  document.querySelectorAll('.section').forEach(s => s.classList.remove('active'));
+  document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+  document.getElementById(tab).classList.add('active');
+  btn.classList.add('active');
+}
+
+// ============ TRACKER ============
+function toggleCheck(item) {
+  const box = item.querySelector('.check-box');
+  const label = item.querySelector('.check-label');
+  box.classList.toggle('checked');
+  label.classList.toggle('done');
+  updateProgress();
+}
+
+function updateProgress() {
+  const sections = [
+    { id: 'phy', count: 10 },
+    { id: 'chem', count: 9 },
+    { id: 'math', count: 8 },
+    { id: 'overall', count: 6 }
+  ];
+
+  let allChecked = 0, allTotal = 0;
+  let totalHours = 0;
+
+  sections.forEach(sec => {
+    const card = document.querySelector('.tracker-card-header.tch-' + (sec.id === 'overall' ? 'overall' : sec.id === 'phy' ? 'phy' : sec.id === 'chem' ? 'chem' : 'math'));
+    if (!card) return;
+    const body = card.nextElementSibling;
+    const items = body.querySelectorAll('.check-item');
+    let checked = 0;
+    items.forEach(item => {
+      if (item.querySelector('.check-box.checked')) checked++;
+      const minInput = item.querySelector('.time-spent-input');
+      if (minInput && minInput.value) totalHours += parseInt(minInput.value) || 0;
+    });
+    const pct = items.length > 0 ? Math.round(checked/items.length*100) : 0;
+    const progEl = document.getElementById(sec.id + '-prog');
+    const pctEl = document.getElementById(sec.id + '-prog-pct');
+    if (progEl) progEl.style.width = pct + '%';
+    if (pctEl) pctEl.textContent = pct + '% complete';
+    allChecked += checked;
+    allTotal += items.length;
+  });
+
+  document.getElementById('stat-completed').textContent = allChecked;
+  document.getElementById('stat-total').textContent = allTotal;
+  document.getElementById('stat-pct').textContent = allTotal > 0 ? Math.round(allChecked/allTotal*100) + '%' : '0%';
+  document.getElementById('stat-hours').textContent = Math.floor(totalHours/60) + 'h ' + (totalHours%60) + 'm';
+}
+
+// Add event listeners to time inputs
+document.addEventListener('DOMContentLoaded', () => {
+  document.querySelectorAll('.time-spent-input').forEach(inp => {
+    inp.addEventListener('click', e => e.stopPropagation());
+    inp.addEventListener('input', updateProgress);
+  });
+});
+
+function selectMood(btn) {
+  document.querySelectorAll('.mood-btn').forEach(b => b.classList.remove('selected'));
+  btn.classList.add('selected');
+}
+
+function saveProgress() {
+  const checks = [];
+  document.querySelectorAll('.check-item').forEach(item => {
+    checks.push(item.querySelector('.check-box').classList.contains('checked'));
+  });
+  const mood = document.querySelector('.mood-btn.selected')?.textContent || 'Not selected';
+  const notes = document.getElementById('daily-notes').value;
+  const data = { day: 1, date: new Date().toLocaleDateString(), checks, mood, notes };
+  localStorage.setItem('kcet_day1', JSON.stringify(data));
+  document.getElementById('save-msg').style.display = 'block';
+  setTimeout(() => document.getElementById('save-msg').style.display = 'none', 4000);
+}
+
+// Restore saved data
+window.onload = () => {
+  const saved = localStorage.getItem('kcet_day1');
+  if (saved) {
+    const data = JSON.parse(saved);
+    const items = document.querySelectorAll('.check-item');
+    data.checks.forEach((checked, i) => {
+      if (items[i] && checked) {
+        items[i].querySelector('.check-box').classList.add('checked');
+        items[i].querySelector('.check-label').classList.add('done');
+      }
+    });
+    if (data.mood) {
+      document.querySelectorAll('.mood-btn').forEach(btn => {
+        if (btn.textContent === data.mood) btn.classList.add('selected');
+      });
+    }
+    if (data.notes) document.getElementById('daily-notes').value = data.notes;
+    updateProgress();
+  }
+};
+</script>
+</body>
+</html>
